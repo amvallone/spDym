@@ -1,0 +1,5083 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+
+
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-5b61aadc846f0818981ceec31b49c475fb084c163fdec5efbc2c21ef539092a9.css" integrity="sha256-W2Gq3IRvCBiYHO7DG0nEdfsITBY/3sXvvCwh71OQkqk=" media="all" rel="stylesheet" />
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-43bbf7e6e7b177c23ca12ba5d5fc9b26944fdb8f2bb890a6579aa7827b205e02.css" integrity="sha256-Q7v35uexd8I8oSul1fybJpRP248ruJCmV5qngnsgXgI=" media="all" rel="stylesheet" />
+  
+  
+  
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>pysal/usjoin.csv at master · pysal/pysal</title>
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta content="https://avatars2.githubusercontent.com/u/3769919?v=3&amp;s=400" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="pysal/pysal" property="og:title" /><meta content="https://github.com/pysal/pysal" property="og:url" /><meta content="pysal - PySAL: Python Spatial Analysis Library" property="og:description" />
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MTYyMDQ5Mjc0OmJmYzJkYmVhMmMxYjliZTMxMjRkMWZhZTM1MThkYWMxOGFiNTEzNGQ0YmQyODE5MGYxN2ZhN2U0Y2QyODU2Zjg=--b13f1ec4daa8c8aaf29975183cd74f64c7829fa5">
+  <meta name="pjax-timeout" content="1000">
+  <link rel="sudo-modal" href="/sessions/sudo_modal">
+  <meta name="request-id" content="E577:264A:14413B6:20C176A:58D8147E" data-pjax-transient>
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+  <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+<meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="E577:264A:14413B6:20C176A:58D8147E" name="octolytics-dimension-request_id" /><meta content="14987995" name="octolytics-actor-id" /><meta content="amvallone" name="octolytics-actor-login" /><meta content="2eb6b465b4b11a0504eb566b208764668815e36acd3f49d8aa59a1ba9fbf0939" name="octolytics-actor-hash" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
+
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+  
+
+      <meta name="hostname" content="github.com">
+  <meta name="user-login" content="amvallone">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="NzA3OTNhYzIwNjMxMjlhNTNmZTZhOTMwM2UxYzBiZjkxODAxYzU4M2E5OWFjYjg1NjVlYTc4ZTI4M2UxYTc2NHx7InJlbW90ZV9hZGRyZXNzIjoiMTUwLjI0NC4xMDkuNDMiLCJyZXF1ZXN0X2lkIjoiRTU3NzoyNjRBOjE0NDEzQjY6MjBDMTc2QTo1OEQ4MTQ3RSIsInRpbWVzdGFtcCI6MTQ5MDU1NjAzMSwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+
+
+  <meta name="html-safe-nonce" content="09444c28c599a7af0e54c39fa4e93ea71e7132a3">
+
+  <meta http-equiv="x-pjax-version" content="e58fefb6792a19d68c1732abd53bb24b">
+  
+
+    
+  <meta name="description" content="pysal - PySAL: Python Spatial Analysis Library">
+  <meta name="go-import" content="github.com/pysal/pysal git https://github.com/pysal/pysal.git">
+
+  <meta content="3769919" name="octolytics-dimension-user_id" /><meta content="pysal" name="octolytics-dimension-user_login" /><meta content="8295380" name="octolytics-dimension-repository_id" /><meta content="pysal/pysal" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="8295380" name="octolytics-dimension-repository_network_root_id" /><meta content="pysal/pysal" name="octolytics-dimension-repository_network_root_nwo" />
+        <link href="https://github.com/pysal/pysal/commits/master.atom" rel="alternate" title="Recent Commits to pysal:master" type="application/atom+xml">
+
+
+    <link rel="canonical" href="https://github.com/pysal/pysal/blob/master/pysal/examples/us_income/usjoin.csv" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+  <meta name="u2f-support" content="true">
+
+  </head>
+
+  <body class="logged-in env-production emoji-size-boost page-blob">
+    
+
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+
+        
+<div class="header" role="banner">
+  <div class="container clearfix">
+    <a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+
+
+        <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/pysal/pysal/search" class="js-site-search-form" data-scoped-search-url="/pysal/pysal/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+        <a href="/pysal/pysal/blob/master/pysal/examples/us_income/usjoin.csv" class="header-search-scope no-underline">This repository</a>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        value=""
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        autocapitalize="off">
+        <input type="hidden" class="js-site-search-type-field" name="type" >
+    </label>
+</form></div>
+
+
+      <ul class="header-nav float-left" role="navigation">
+        <li class="header-nav-item">
+          <a href="/pulls" aria-label="Pull requests you created" class="js-selected-navigation-item header-nav-link" data-ga-click="Header, click, Nav menu - item:pulls context:user" data-hotkey="g p" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls">
+            Pull requests
+</a>        </li>
+        <li class="header-nav-item">
+          <a href="/issues" aria-label="Issues you created" class="js-selected-navigation-item header-nav-link" data-ga-click="Header, click, Nav menu - item:issues context:user" data-hotkey="g i" data-selected-links="/issues /issues/assigned /issues/mentioned /issues">
+            Issues
+</a>        </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://gist.github.com/" data-ga-click="Header, go to gist, text:gist">Gist</a>
+          </li>
+      </ul>
+
+    
+<ul class="header-nav user-nav float-right" id="user-links">
+  <li class="header-nav-item">
+    
+    <a href="/notifications" aria-label="You have no unread notifications" class="header-nav-link notification-indicator tooltipped tooltipped-s js-socket-channel js-notification-indicator " data-channel="notification-changed:14987995" data-ga-click="Header, go to notifications, icon:read" data-hotkey="g n">
+        <span class="mail-status "></span>
+        <svg aria-hidden="true" class="octicon octicon-bell float-left" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 12v1H0v-1l.73-.58c.77-.77.81-2.55 1.19-4.42C2.69 3.23 6 2 6 2c0-.55.45-1 1-1s1 .45 1 1c0 0 3.39 1.23 4.16 5 .38 1.88.42 3.66 1.19 4.42l.66.58H14zm-7 4c1.11 0 2-.89 2-2H5c0 1.11.89 2 2 2z"/></svg>
+</a>
+  </li>
+
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link tooltipped tooltipped-s js-menu-target" href="/new"
+       aria-label="Create new…"
+       data-ga-click="Header, create new, icon:add">
+      <svg aria-hidden="true" class="octicon octicon-plus float-left" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5z"/></svg>
+      <span class="dropdown-caret"></span>
+    </a>
+
+    <div class="dropdown-menu-content js-menu-content">
+      <ul class="dropdown-menu dropdown-menu-sw">
+        
+<a class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+  <a class="dropdown-item" href="/new/import" data-ga-click="Header, import a repository">
+    Import repository
+  </a>
+
+<a class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, create new gist">
+  New gist
+</a>
+
+  <a class="dropdown-item" href="/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+
+  <div class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="pysal/pysal">This repository</span>
+  </div>
+    <a class="dropdown-item" href="/pysal/pysal/issues/new" data-ga-click="Header, create new issue">
+      New issue
+    </a>
+
+      </ul>
+    </div>
+  </li>
+
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link name tooltipped tooltipped-sw js-menu-target" href="/amvallone"
+       aria-label="View profile and more"
+       data-ga-click="Header, show menu, icon:avatar">
+      <img alt="@amvallone" class="avatar" src="https://avatars3.githubusercontent.com/u/14987995?v=3&amp;s=40" height="20" width="20">
+      <span class="dropdown-caret"></span>
+    </a>
+
+    <div class="dropdown-menu-content js-menu-content">
+      <div class="dropdown-menu dropdown-menu-sw">
+        <div class="dropdown-header header-nav-current-user css-truncate">
+          Signed in as <strong class="css-truncate-target">amvallone</strong>
+        </div>
+
+        <div class="dropdown-divider"></div>
+
+        <a class="dropdown-item" href="/amvallone" data-ga-click="Header, go to profile, text:your profile">
+          Your profile
+        </a>
+        <a class="dropdown-item" href="/amvallone?tab=stars" data-ga-click="Header, go to starred repos, text:your stars">
+          Your stars
+        </a>
+        <a class="dropdown-item" href="/explore" data-ga-click="Header, go to explore, text:explore">
+          Explore
+        </a>
+          <a class="dropdown-item" href="/integrations" data-ga-click="Header, go to integrations, text:integrations">
+            Integrations
+          </a>
+        <a class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">
+          Help
+        </a>
+
+        <div class="dropdown-divider"></div>
+
+        <a class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">
+          Settings
+        </a>
+
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="BYQYlgaZ5DjoZmd5v7Z+jTeS3aDMdkRK52tYUnb+cFrFGHaAGNy6FINEjzIvHfMJjhf1zQMy17CgYkZswYhE9Q==" /></div>
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+            Sign out
+          </button>
+</form>      </div>
+    </div>
+  </li>
+</ul>
+
+
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="sr-only right-0" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="8R5bMvsjdOm4cILO7aFheTPr4qcGPv8jYXoI8Dk8Tf8xgjUk5WYqxdNSaoV9Cuz9im7Kysl6bNkmcxbOjkp5UA==" /></div>
+      <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+        Sign out
+      </button>
+</form>  </div>
+</div>
+
+
+      
+
+  </div>
+
+  <div id="start-of-content" class="accessibility-aid"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+
+  <div role="main">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode">
+    <div id="js-repo-pjax-container" data-pjax-container>
+        
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
+    <div class="container repohead-details-container">
+
+
+      <ul class="pagehead-actions">
+  <li>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="nGVReJ421xQ9Z2xB++KAxDsDmoU7rwB6Th2OmY2ss1lXz52aRF9MwHqgVk7wyrSWfUhCEfhfZp9qPDhInfA6ng==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="8295380" />
+
+        <div class="select-menu js-menu-container js-select-menu">
+          <a href="/pysal/pysal/subscription"
+            class="btn btn-sm btn-with-count select-menu-button js-menu-target" role="button" tabindex="0" aria-haspopup="true"
+            data-ga-click="Repository, click Watch settings, action:blob#show">
+            <span class="js-select-button">
+              <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+              Watch
+            </span>
+          </a>
+          <a class="social-count js-social-count"
+            href="/pysal/pysal/watchers"
+            aria-label="54 users are watching this repository">
+            54
+          </a>
+
+        <div class="select-menu-modal-holder">
+          <div class="select-menu-modal subscription-menu-modal js-menu-content" aria-hidden="true">
+            <div class="select-menu-header js-navigation-enable" tabindex="-1">
+              <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+              <span class="select-menu-title">Notifications</span>
+            </div>
+
+              <div class="select-menu-list js-navigation-container" role="menu">
+
+                <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+                  <div class="select-menu-item-text">
+                    <input checked="checked" id="do_included" name="do" type="radio" value="included" />
+                    <span class="select-menu-item-heading">Not watching</span>
+                    <span class="description">Be notified when participating or @mentioned.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                      Watch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+                  <div class="select-menu-item-text">
+                    <input id="do_subscribed" name="do" type="radio" value="subscribed" />
+                    <span class="select-menu-item-heading">Watching</span>
+                    <span class="description">Be notified of all conversations.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                      Unwatch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+                  <div class="select-menu-item-text">
+                    <input id="do_ignore" name="do" type="radio" value="ignore" />
+                    <span class="select-menu-item-heading">Ignoring</span>
+                    <span class="description">Never be notified.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-mute" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8 2.81v10.38c0 .67-.81 1-1.28.53L3 10H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h2l3.72-3.72C7.19 1.81 8 2.14 8 2.81zm7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06L11.44 8 9.47 9.97l1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06L13.56 8l1.97-1.97z"/></svg>
+                      Stop ignoring
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+</form>
+  </li>
+
+  <li>
+      <div class="js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/pysal/pysal/unstar" class="starred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="BtgVIOomw7AMSjM/jcZP5rg+FZHqgjGUcifkwTApyvihUpzChgBV4sHeKbmcpIUTwqApJJdCAtDc7T1ZdqjY1g==" /></div>
+      <button
+        type="submit"
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Unstar this repository" title="Unstar pysal/pysal"
+        data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">
+        <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="/pysal/pysal/stargazers"
+           aria-label="296 users starred this repository">
+          296
+        </a>
+</form>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/pysal/pysal/star" class="unstarred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="rXS50XmHXYv/qhvIpL0j8F44kscwwowEOfQjbdUdkpe/CaslGEU1vC0vlKQVFb1JyjrP1rq+uHI9q+DZijhDSQ==" /></div>
+      <button
+        type="submit"
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Star this repository" title="Star pysal/pysal"
+        data-ga-click="Repository, click star button, action:blob#show; text:Star">
+        <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="/pysal/pysal/stargazers"
+           aria-label="296 users starred this repository">
+          296
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/pysal/pysal/fork" class="btn-with-count" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="E9yRvDJxyEahk1raCgbnnmFNa80Yosr6rL0Bomzi3s9gZ6PixPAc5+J0Qd1L2C2bA0HGPW7n6Arv7diT1mT+Zw==" /></div>
+            <button
+                type="submit"
+                class="btn btn-sm btn-with-count"
+                data-ga-click="Repository, show fork modal, action:blob#show; text:Fork"
+                title="Fork your own copy of pysal/pysal to your account"
+                aria-label="Fork your own copy of pysal/pysal to your account">
+              <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+              Fork
+            </button>
+</form>
+    <a href="/pysal/pysal/network" class="social-count"
+       aria-label="132 users forked this repository">
+      132
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a href="/pysal" class="url fn" rel="author">pysal</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="/pysal/pysal" data-pjax="#js-repo-pjax-container">pysal</a></strong>
+
+</h1>
+
+    </div>
+    <div class="container">
+      
+<nav class="reponav js-repo-nav js-sidenav-container-pjax"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/pysal/pysal" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /pysal/pysal" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="/pysal/pysal/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /pysal/pysal/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="counter">41</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/pysal/pysal/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /pysal/pysal/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="counter">10</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a href="/pysal/pysal/projects" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /pysal/pysal/projects">
+      <svg aria-hidden="true" class="octicon octicon-project" height="16" version="1.1" viewBox="0 0 15 16" width="15"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      Projects
+      <span class="counter">1</span>
+</a>
+    <a href="/pysal/pysal/wiki" class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /pysal/pysal/wiki">
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+      Wiki
+</a>
+
+  <a href="/pysal/pysal/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="pulse /pysal/pysal/pulse">
+    <svg aria-hidden="true" class="octicon octicon-pulse" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0v2h3.6l.9-1.8.9 5.4L9 8.5l1.6 1.5H14V8z"/></svg>
+    Pulse
+</a>
+  <a href="/pysal/pysal/graphs" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors /pysal/pysal/graphs">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+    Graphs
+</a>
+
+</nav>
+
+    </div>
+  </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+
+    
+
+<a href="/pysal/pysal/blob/7d59a95652a7478a7f18f2862d034c737976d2da/pysal/examples/us_income/usjoin.csv" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+<!-- blob contrib key: blob_contributors:v21:760dd354b616e49e0d3dd8f445644232 -->
+
+<div class="file-navigation js-zeroclipboard-container">
+  
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    
+    type="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+      <i>Branch:</i>
+      <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/pysal/pysal/blob/dev/pysal/examples/us_income/usjoin.csv"
+               data-name="dev"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                dev
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/pysal/pysal/blob/dijkstra_mp/pysal/examples/us_income/usjoin.csv"
+               data-name="dijkstra_mp"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                dijkstra_mp
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/pysal/pysal/blob/master/pysal/examples/us_income/usjoin.csv"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/pysal/pysal/blob/network__dev/pysal/examples/us_income/usjoin.csv"
+               data-name="network__dev"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                network__dev
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/pysal/pysal/blob/util.compute_length/pysal/examples/us_income/usjoin.csv"
+               data-name="util.compute_length"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                util.compute_length
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/pysal/pysal/tree/v1.13.0/pysal/examples/us_income/usjoin.csv"
+              data-name="v1.13.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.13.0">
+                v1.13.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/pysal/pysal/tree/v1.12.0/pysal/examples/us_income/usjoin.csv"
+              data-name="v1.12.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.12.0">
+                v1.12.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/pysal/pysal/tree/v1.11.2/pysal/examples/us_income/usjoin.csv"
+              data-name="v1.11.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.11.2">
+                v1.11.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/pysal/pysal/tree/v1.11.1/pysal/examples/us_income/usjoin.csv"
+              data-name="v1.11.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.11.1">
+                v1.11.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/pysal/pysal/tree/v1.11.0/pysal/examples/us_income/usjoin.csv"
+              data-name="v1.11.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.11.0">
+                v1.11.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/pysal/pysal/tree/v1.10/pysal/examples/us_income/usjoin.csv"
+              data-name="v1.10"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.10">
+                v1.10
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/pysal/pysal/tree/v1.9.1/pysal/examples/us_income/usjoin.csv"
+              data-name="v1.9.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.9.1">
+                v1.9.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/pysal/pysal/tree/v1.9/pysal/examples/us_income/usjoin.csv"
+              data-name="v1.9"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.9">
+                v1.9
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/pysal/pysal/tree/v1.8/pysal/examples/us_income/usjoin.csv"
+              data-name="v1.8"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.8">
+                v1.8
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/pysal/pysal/tree/v1.7/pysal/examples/us_income/usjoin.csv"
+              data-name="v1.7"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.7">
+                v1.7
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/pysal/pysal/tree/v1.6/pysal/examples/us_income/usjoin.csv"
+              data-name="v1.6"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.6">
+                v1.6
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/pysal/pysal/tree/v1.5/pysal/examples/us_income/usjoin.csv"
+              data-name="v1.5"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v1.5">
+                v1.5
+              </span>
+            </a>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="BtnGroup float-right">
+    <a href="/pysal/pysal/find/master"
+          class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+          data-pjax
+          data-hotkey="t">
+      Find file
+    </a>
+    <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm BtnGroup-item tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
+  </div>
+  <div class="breadcrumb js-zeroclipboard-target">
+    <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/pysal/pysal"><span>pysal</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/pysal/pysal/tree/master/pysal"><span>pysal</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="/pysal/pysal/tree/master/pysal/examples"><span>examples</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="/pysal/pysal/tree/master/pysal/examples/us_income"><span>us_income</span></a></span><span class="separator">/</span><strong class="final-path">usjoin.csv</strong>
+  </div>
+</div>
+
+
+<include-fragment class="commit-tease" src="/pysal/pysal/contributors/master/pysal/examples/us_income/usjoin.csv">
+  <div>
+    Fetching contributors&hellip;
+  </div>
+
+  <div class="commit-tease-contributors">
+    <img alt="" class="loader-loading float-left" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" />
+    <span class="loader-error">Cannot retrieve contributors at this time</span>
+  </div>
+</include-fragment>
+<div class="file">
+  <div class="file-header">
+  <div class="file-actions">
+
+    <div class="BtnGroup">
+      <a href="/pysal/pysal/raw/master/pysal/examples/us_income/usjoin.csv" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
+        <a href="/pysal/pysal/blame/master/pysal/examples/us_income/usjoin.csv" class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b">Blame</a>
+      <a href="/pysal/pysal/commits/master/pysal/examples/us_income/usjoin.csv" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
+    </div>
+
+        <a class="btn-octicon tooltipped tooltipped-nw"
+           href="github-mac://openRepo/https://github.com/pysal/pysal?branch=master&amp;filepath=pysal%2Fexamples%2Fus_income%2Fusjoin.csv"
+           aria-label="Open this file in GitHub Desktop"
+           data-ga-click="Repository, open with desktop, type:mac">
+            <svg aria-hidden="true" class="octicon octicon-device-desktop" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
+        </a>
+
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/pysal/pysal/edit/master/pysal/examples/us_income/usjoin.csv" class="inline-form js-update-url-with-hash" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="5BPrqcJ4n223o2Xh5rnV8fllNXoYpNxDxLNliYmbORRv6CmSQdvvQTsjwrEXJvewR7hjMG1tv7s6wL2jXUHAwg==" /></div>
+          <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
+            aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
+            <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
+          </button>
+</form>        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/pysal/pysal/delete/master/pysal/examples/us_income/usjoin.csv" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="zWVCBS//QNj9cM69WfQDWDc8GZe7ybHkejrN7fpQNSR7Gf+2e4JJvSF10EWVhGrATmTneV55pl9hpRvbySHVbQ==" /></div>
+          <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
+            aria-label="Fork this project and delete the file" data-disable-with>
+            <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
+          </button>
+</form>  </div>
+
+  <div class="file-info">
+      50 lines (49 sloc)
+      <span class="file-info-divider"></span>
+    20.7 KB
+  </div>
+</div>
+
+  
+
+  <div itemprop="text" class="blob-wrapper data type-csv">
+      <div class="blob-interaction-bar">
+  <svg aria-hidden="true" class="octicon octicon-search" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+  <input type="text" name="filter" class="form-control js-csv-filter-field blob-filter" autocapitalize="off"
+         placeholder="Search this file…" aria-label="Search this file…">
+</div>
+
+<div class="markdown-body">
+  <table class="js-csv-data csv-data js-file-line-container">
+    <thead>
+      <tr id="LC1" class="js-file-line">
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <th>Name</th>
+        <th>STATE_FIPS</th>
+        <th>1929</th>
+        <th>1930</th>
+        <th>1931</th>
+        <th>1932</th>
+        <th>1933</th>
+        <th>1934</th>
+        <th>1935</th>
+        <th>1936</th>
+        <th>1937</th>
+        <th>1938</th>
+        <th>1939</th>
+        <th>1940</th>
+        <th>1941</th>
+        <th>1942</th>
+        <th>1943</th>
+        <th>1944</th>
+        <th>1945</th>
+        <th>1946</th>
+        <th>1947</th>
+        <th>1948</th>
+        <th>1949</th>
+        <th>1950</th>
+        <th>1951</th>
+        <th>1952</th>
+        <th>1953</th>
+        <th>1954</th>
+        <th>1955</th>
+        <th>1956</th>
+        <th>1957</th>
+        <th>1958</th>
+        <th>1959</th>
+        <th>1960</th>
+        <th>1961</th>
+        <th>1962</th>
+        <th>1963</th>
+        <th>1964</th>
+        <th>1965</th>
+        <th>1966</th>
+        <th>1967</th>
+        <th>1968</th>
+        <th>1969</th>
+        <th>1970</th>
+        <th>1971</th>
+        <th>1972</th>
+        <th>1973</th>
+        <th>1974</th>
+        <th>1975</th>
+        <th>1976</th>
+        <th>1977</th>
+        <th>1978</th>
+        <th>1979</th>
+        <th>1980</th>
+        <th>1981</th>
+        <th>1982</th>
+        <th>1983</th>
+        <th>1984</th>
+        <th>1985</th>
+        <th>1986</th>
+        <th>1987</th>
+        <th>1988</th>
+        <th>1989</th>
+        <th>1990</th>
+        <th>1991</th>
+        <th>1992</th>
+        <th>1993</th>
+        <th>1994</th>
+        <th>1995</th>
+        <th>1996</th>
+        <th>1997</th>
+        <th>1998</th>
+        <th>1999</th>
+        <th>2000</th>
+        <th>2001</th>
+        <th>2002</th>
+        <th>2003</th>
+        <th>2004</th>
+        <th>2005</th>
+        <th>2006</th>
+        <th>2007</th>
+        <th>2008</th>
+        <th>2009</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="LC2" class="js-file-line">
+        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td>Alabama</td>
+        <td>1</td>
+        <td>323</td>
+        <td>267</td>
+        <td>224</td>
+        <td>162</td>
+        <td>166</td>
+        <td>211</td>
+        <td>217</td>
+        <td>251</td>
+        <td>267</td>
+        <td>244</td>
+        <td>252</td>
+        <td>281</td>
+        <td>375</td>
+        <td>518</td>
+        <td>658</td>
+        <td>738</td>
+        <td>784</td>
+        <td>754</td>
+        <td>805</td>
+        <td>881</td>
+        <td>833</td>
+        <td>909</td>
+        <td>1045</td>
+        <td>1106</td>
+        <td>1161</td>
+        <td>1139</td>
+        <td>1273</td>
+        <td>1356</td>
+        <td>1421</td>
+        <td>1468</td>
+        <td>1526</td>
+        <td>1558</td>
+        <td>1587</td>
+        <td>1667</td>
+        <td>1758</td>
+        <td>1890</td>
+        <td>2030</td>
+        <td>2169</td>
+        <td>2294</td>
+        <td>2516</td>
+        <td>2748</td>
+        <td>2979</td>
+        <td>3225</td>
+        <td>3544</td>
+        <td>3960</td>
+        <td>4351</td>
+        <td>4765</td>
+        <td>5323</td>
+        <td>5817</td>
+        <td>6500</td>
+        <td>7199</td>
+        <td>7892</td>
+        <td>8712</td>
+        <td>9185</td>
+        <td>9783</td>
+        <td>10800</td>
+        <td>11583</td>
+        <td>12202</td>
+        <td>12912</td>
+        <td>13842</td>
+        <td>14899</td>
+        <td>15832</td>
+        <td>16536</td>
+        <td>17462</td>
+        <td>17991</td>
+        <td>18860</td>
+        <td>19683</td>
+        <td>20329</td>
+        <td>21129</td>
+        <td>22123</td>
+        <td>22987</td>
+        <td>23471</td>
+        <td>24467</td>
+        <td>25161</td>
+        <td>26065</td>
+        <td>27665</td>
+        <td>29097</td>
+        <td>30634</td>
+        <td>31988</td>
+        <td>32819</td>
+        <td>32274</td>
+      </tr>
+      <tr id="LC3" class="js-file-line">
+        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td>Arizona</td>
+        <td>4</td>
+        <td>600</td>
+        <td>520</td>
+        <td>429</td>
+        <td>321</td>
+        <td>308</td>
+        <td>362</td>
+        <td>416</td>
+        <td>462</td>
+        <td>504</td>
+        <td>478</td>
+        <td>490</td>
+        <td>505</td>
+        <td>638</td>
+        <td>917</td>
+        <td>1004</td>
+        <td>1050</td>
+        <td>1124</td>
+        <td>1117</td>
+        <td>1186</td>
+        <td>1324</td>
+        <td>1305</td>
+        <td>1367</td>
+        <td>1623</td>
+        <td>1716</td>
+        <td>1716</td>
+        <td>1696</td>
+        <td>1752</td>
+        <td>1850</td>
+        <td>1893</td>
+        <td>1885</td>
+        <td>1974</td>
+        <td>2059</td>
+        <td>2103</td>
+        <td>2167</td>
+        <td>2204</td>
+        <td>2310</td>
+        <td>2412</td>
+        <td>2587</td>
+        <td>2754</td>
+        <td>3092</td>
+        <td>3489</td>
+        <td>3843</td>
+        <td>4145</td>
+        <td>4487</td>
+        <td>4929</td>
+        <td>5329</td>
+        <td>5528</td>
+        <td>6074</td>
+        <td>6642</td>
+        <td>7586</td>
+        <td>8604</td>
+        <td>9590</td>
+        <td>10658</td>
+        <td>10945</td>
+        <td>11654</td>
+        <td>12885</td>
+        <td>13808</td>
+        <td>14463</td>
+        <td>15130</td>
+        <td>15795</td>
+        <td>16568</td>
+        <td>17211</td>
+        <td>17563</td>
+        <td>18131</td>
+        <td>18756</td>
+        <td>19774</td>
+        <td>20634</td>
+        <td>21611</td>
+        <td>22781</td>
+        <td>24133</td>
+        <td>25189</td>
+        <td>25578</td>
+        <td>26232</td>
+        <td>26469</td>
+        <td>27106</td>
+        <td>28753</td>
+        <td>30671</td>
+        <td>32552</td>
+        <td>33470</td>
+        <td>33445</td>
+        <td>32077</td>
+      </tr>
+      <tr id="LC4" class="js-file-line">
+        <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td>Arkansas</td>
+        <td>5</td>
+        <td>310</td>
+        <td>228</td>
+        <td>215</td>
+        <td>157</td>
+        <td>157</td>
+        <td>187</td>
+        <td>207</td>
+        <td>247</td>
+        <td>256</td>
+        <td>231</td>
+        <td>249</td>
+        <td>260</td>
+        <td>342</td>
+        <td>481</td>
+        <td>559</td>
+        <td>687</td>
+        <td>740</td>
+        <td>756</td>
+        <td>741</td>
+        <td>886</td>
+        <td>813</td>
+        <td>847</td>
+        <td>957</td>
+        <td>1027</td>
+        <td>1066</td>
+        <td>1074</td>
+        <td>1176</td>
+        <td>1230</td>
+        <td>1244</td>
+        <td>1314</td>
+        <td>1412</td>
+        <td>1405</td>
+        <td>1511</td>
+        <td>1574</td>
+        <td>1656</td>
+        <td>1777</td>
+        <td>1886</td>
+        <td>2094</td>
+        <td>2219</td>
+        <td>2409</td>
+        <td>2619</td>
+        <td>2849</td>
+        <td>3096</td>
+        <td>3415</td>
+        <td>3985</td>
+        <td>4376</td>
+        <td>4655</td>
+        <td>5155</td>
+        <td>5670</td>
+        <td>6509</td>
+        <td>7088</td>
+        <td>7586</td>
+        <td>8564</td>
+        <td>8952</td>
+        <td>9476</td>
+        <td>10560</td>
+        <td>11264</td>
+        <td>11734</td>
+        <td>12184</td>
+        <td>13016</td>
+        <td>13813</td>
+        <td>14509</td>
+        <td>15255</td>
+        <td>16425</td>
+        <td>16995</td>
+        <td>17750</td>
+        <td>18546</td>
+        <td>19442</td>
+        <td>20229</td>
+        <td>21260</td>
+        <td>22244</td>
+        <td>22257</td>
+        <td>23532</td>
+        <td>23929</td>
+        <td>25074</td>
+        <td>26465</td>
+        <td>27512</td>
+        <td>29041</td>
+        <td>31070</td>
+        <td>31800</td>
+        <td>31493</td>
+      </tr>
+      <tr id="LC5" class="js-file-line">
+        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td>California</td>
+        <td>6</td>
+        <td>991</td>
+        <td>887</td>
+        <td>749</td>
+        <td>580</td>
+        <td>546</td>
+        <td>603</td>
+        <td>660</td>
+        <td>771</td>
+        <td>795</td>
+        <td>771</td>
+        <td>781</td>
+        <td>844</td>
+        <td>1013</td>
+        <td>1286</td>
+        <td>1549</td>
+        <td>1583</td>
+        <td>1583</td>
+        <td>1671</td>
+        <td>1693</td>
+        <td>1763</td>
+        <td>1744</td>
+        <td>1877</td>
+        <td>2080</td>
+        <td>2207</td>
+        <td>2249</td>
+        <td>2227</td>
+        <td>2379</td>
+        <td>2495</td>
+        <td>2579</td>
+        <td>2596</td>
+        <td>2740</td>
+        <td>2823</td>
+        <td>2880</td>
+        <td>3004</td>
+        <td>3102</td>
+        <td>3274</td>
+        <td>3417</td>
+        <td>3663</td>
+        <td>3878</td>
+        <td>4207</td>
+        <td>4540</td>
+        <td>4815</td>
+        <td>5034</td>
+        <td>5451</td>
+        <td>5947</td>
+        <td>6553</td>
+        <td>7091</td>
+        <td>7815</td>
+        <td>8570</td>
+        <td>9618</td>
+        <td>10846</td>
+        <td>12029</td>
+        <td>13205</td>
+        <td>13774</td>
+        <td>14491</td>
+        <td>15927</td>
+        <td>16909</td>
+        <td>17628</td>
+        <td>18625</td>
+        <td>19713</td>
+        <td>20765</td>
+        <td>21889</td>
+        <td>22024</td>
+        <td>22722</td>
+        <td>22927</td>
+        <td>23473</td>
+        <td>24496</td>
+        <td>25563</td>
+        <td>26759</td>
+        <td>28280</td>
+        <td>29910</td>
+        <td>32275</td>
+        <td>32750</td>
+        <td>32900</td>
+        <td>33801</td>
+        <td>35663</td>
+        <td>37463</td>
+        <td>40169</td>
+        <td>41943</td>
+        <td>42377</td>
+        <td>40902</td>
+      </tr>
+      <tr id="LC6" class="js-file-line">
+        <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td>Colorado</td>
+        <td>8</td>
+        <td>634</td>
+        <td>578</td>
+        <td>471</td>
+        <td>354</td>
+        <td>353</td>
+        <td>368</td>
+        <td>444</td>
+        <td>542</td>
+        <td>532</td>
+        <td>506</td>
+        <td>516</td>
+        <td>545</td>
+        <td>649</td>
+        <td>895</td>
+        <td>1039</td>
+        <td>1065</td>
+        <td>1189</td>
+        <td>1211</td>
+        <td>1359</td>
+        <td>1454</td>
+        <td>1430</td>
+        <td>1521</td>
+        <td>1796</td>
+        <td>1880</td>
+        <td>1813</td>
+        <td>1773</td>
+        <td>1869</td>
+        <td>1960</td>
+        <td>2104</td>
+        <td>2157</td>
+        <td>2261</td>
+        <td>2340</td>
+        <td>2417</td>
+        <td>2471</td>
+        <td>2539</td>
+        <td>2638</td>
+        <td>2800</td>
+        <td>2982</td>
+        <td>3142</td>
+        <td>3381</td>
+        <td>3686</td>
+        <td>4055</td>
+        <td>4413</td>
+        <td>4791</td>
+        <td>5310</td>
+        <td>5864</td>
+        <td>6321</td>
+        <td>6895</td>
+        <td>7567</td>
+        <td>8539</td>
+        <td>9596</td>
+        <td>10809</td>
+        <td>12141</td>
+        <td>12945</td>
+        <td>13570</td>
+        <td>14751</td>
+        <td>15416</td>
+        <td>15772</td>
+        <td>16417</td>
+        <td>17285</td>
+        <td>18548</td>
+        <td>19703</td>
+        <td>20487</td>
+        <td>21447</td>
+        <td>22526</td>
+        <td>23498</td>
+        <td>24865</td>
+        <td>26231</td>
+        <td>27950</td>
+        <td>29860</td>
+        <td>31546</td>
+        <td>32949</td>
+        <td>34228</td>
+        <td>33963</td>
+        <td>34092</td>
+        <td>35543</td>
+        <td>37388</td>
+        <td>39662</td>
+        <td>41165</td>
+        <td>41719</td>
+        <td>40093</td>
+      </tr>
+      <tr id="LC7" class="js-file-line">
+        <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td>Connecticut</td>
+        <td>9</td>
+        <td>1024</td>
+        <td>921</td>
+        <td>801</td>
+        <td>620</td>
+        <td>583</td>
+        <td>653</td>
+        <td>706</td>
+        <td>806</td>
+        <td>860</td>
+        <td>769</td>
+        <td>836</td>
+        <td>918</td>
+        <td>1145</td>
+        <td>1418</td>
+        <td>1593</td>
+        <td>1599</td>
+        <td>1565</td>
+        <td>1580</td>
+        <td>1702</td>
+        <td>1720</td>
+        <td>1663</td>
+        <td>1891</td>
+        <td>2158</td>
+        <td>2298</td>
+        <td>2393</td>
+        <td>2350</td>
+        <td>2477</td>
+        <td>2684</td>
+        <td>2810</td>
+        <td>2731</td>
+        <td>2832</td>
+        <td>2926</td>
+        <td>3042</td>
+        <td>3175</td>
+        <td>3250</td>
+        <td>3401</td>
+        <td>3583</td>
+        <td>3874</td>
+        <td>4195</td>
+        <td>4443</td>
+        <td>4847</td>
+        <td>5090</td>
+        <td>5300</td>
+        <td>5697</td>
+        <td>6241</td>
+        <td>6813</td>
+        <td>7239</td>
+        <td>7885</td>
+        <td>8712</td>
+        <td>9720</td>
+        <td>10971</td>
+        <td>12439</td>
+        <td>13865</td>
+        <td>14903</td>
+        <td>15799</td>
+        <td>17580</td>
+        <td>18763</td>
+        <td>20038</td>
+        <td>21895</td>
+        <td>24007</td>
+        <td>25797</td>
+        <td>26736</td>
+        <td>26863</td>
+        <td>28635</td>
+        <td>29602</td>
+        <td>30532</td>
+        <td>31947</td>
+        <td>33472</td>
+        <td>35596</td>
+        <td>37452</td>
+        <td>39300</td>
+        <td>40640</td>
+        <td>42279</td>
+        <td>42021</td>
+        <td>42398</td>
+        <td>45009</td>
+        <td>47022</td>
+        <td>51133</td>
+        <td>53930</td>
+        <td>54528</td>
+        <td>52736</td>
+      </tr>
+      <tr id="LC8" class="js-file-line">
+        <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td>Delaware</td>
+        <td>10</td>
+        <td>1032</td>
+        <td>857</td>
+        <td>775</td>
+        <td>590</td>
+        <td>564</td>
+        <td>645</td>
+        <td>701</td>
+        <td>868</td>
+        <td>949</td>
+        <td>795</td>
+        <td>899</td>
+        <td>1027</td>
+        <td>1164</td>
+        <td>1291</td>
+        <td>1464</td>
+        <td>1504</td>
+        <td>1526</td>
+        <td>1565</td>
+        <td>1664</td>
+        <td>1685</td>
+        <td>1805</td>
+        <td>2075</td>
+        <td>2155</td>
+        <td>2244</td>
+        <td>2341</td>
+        <td>2306</td>
+        <td>2507</td>
+        <td>2749</td>
+        <td>2645</td>
+        <td>2651</td>
+        <td>2724</td>
+        <td>2805</td>
+        <td>2815</td>
+        <td>2933</td>
+        <td>3049</td>
+        <td>3210</td>
+        <td>3468</td>
+        <td>3610</td>
+        <td>3785</td>
+        <td>4079</td>
+        <td>4421</td>
+        <td>4608</td>
+        <td>4892</td>
+        <td>5303</td>
+        <td>5871</td>
+        <td>6347</td>
+        <td>6729</td>
+        <td>7349</td>
+        <td>7913</td>
+        <td>8658</td>
+        <td>9549</td>
+        <td>10803</td>
+        <td>11873</td>
+        <td>12727</td>
+        <td>13529</td>
+        <td>14816</td>
+        <td>16056</td>
+        <td>16781</td>
+        <td>17933</td>
+        <td>19312</td>
+        <td>20930</td>
+        <td>21636</td>
+        <td>22342</td>
+        <td>23094</td>
+        <td>23823</td>
+        <td>24530</td>
+        <td>25391</td>
+        <td>26640</td>
+        <td>27405</td>
+        <td>29571</td>
+        <td>30778</td>
+        <td>31255</td>
+        <td>32664</td>
+        <td>33463</td>
+        <td>34123</td>
+        <td>35998</td>
+        <td>37297</td>
+        <td>39358</td>
+        <td>40251</td>
+        <td>40698</td>
+        <td>40135</td>
+      </tr>
+      <tr id="LC9" class="js-file-line">
+        <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td>Florida</td>
+        <td>12</td>
+        <td>518</td>
+        <td>470</td>
+        <td>398</td>
+        <td>319</td>
+        <td>288</td>
+        <td>348</td>
+        <td>376</td>
+        <td>450</td>
+        <td>487</td>
+        <td>460</td>
+        <td>495</td>
+        <td>522</td>
+        <td>609</td>
+        <td>787</td>
+        <td>1009</td>
+        <td>1114</td>
+        <td>1174</td>
+        <td>1169</td>
+        <td>1167</td>
+        <td>1201</td>
+        <td>1208</td>
+        <td>1304</td>
+        <td>1388</td>
+        <td>1474</td>
+        <td>1567</td>
+        <td>1562</td>
+        <td>1673</td>
+        <td>1791</td>
+        <td>1836</td>
+        <td>1887</td>
+        <td>2010</td>
+        <td>2023</td>
+        <td>2039</td>
+        <td>2113</td>
+        <td>2200</td>
+        <td>2348</td>
+        <td>2498</td>
+        <td>2685</td>
+        <td>2909</td>
+        <td>3249</td>
+        <td>3659</td>
+        <td>4006</td>
+        <td>4286</td>
+        <td>4703</td>
+        <td>5235</td>
+        <td>5616</td>
+        <td>5895</td>
+        <td>6376</td>
+        <td>7010</td>
+        <td>7921</td>
+        <td>8879</td>
+        <td>10049</td>
+        <td>11195</td>
+        <td>11789</td>
+        <td>12637</td>
+        <td>13764</td>
+        <td>14705</td>
+        <td>15423</td>
+        <td>16415</td>
+        <td>17593</td>
+        <td>19045</td>
+        <td>19855</td>
+        <td>20189</td>
+        <td>20661</td>
+        <td>21652</td>
+        <td>22340</td>
+        <td>23512</td>
+        <td>24616</td>
+        <td>25722</td>
+        <td>26930</td>
+        <td>27780</td>
+        <td>28145</td>
+        <td>28852</td>
+        <td>29499</td>
+        <td>30277</td>
+        <td>32462</td>
+        <td>34460</td>
+        <td>36934</td>
+        <td>37781</td>
+        <td>37808</td>
+        <td>36565</td>
+      </tr>
+      <tr id="LC10" class="js-file-line">
+        <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td>Georgia</td>
+        <td>13</td>
+        <td>347</td>
+        <td>307</td>
+        <td>256</td>
+        <td>200</td>
+        <td>204</td>
+        <td>244</td>
+        <td>268</td>
+        <td>302</td>
+        <td>313</td>
+        <td>290</td>
+        <td>309</td>
+        <td>337</td>
+        <td>419</td>
+        <td>567</td>
+        <td>725</td>
+        <td>831</td>
+        <td>879</td>
+        <td>845</td>
+        <td>887</td>
+        <td>988</td>
+        <td>969</td>
+        <td>1065</td>
+        <td>1204</td>
+        <td>1280</td>
+        <td>1326</td>
+        <td>1302</td>
+        <td>1423</td>
+        <td>1499</td>
+        <td>1523</td>
+        <td>1583</td>
+        <td>1660</td>
+        <td>1698</td>
+        <td>1744</td>
+        <td>1844</td>
+        <td>1961</td>
+        <td>2082</td>
+        <td>2258</td>
+        <td>2462</td>
+        <td>2655</td>
+        <td>2891</td>
+        <td>3162</td>
+        <td>3394</td>
+        <td>3666</td>
+        <td>4038</td>
+        <td>4497</td>
+        <td>4867</td>
+        <td>5152</td>
+        <td>5694</td>
+        <td>6221</td>
+        <td>6989</td>
+        <td>7722</td>
+        <td>8474</td>
+        <td>9435</td>
+        <td>10054</td>
+        <td>10849</td>
+        <td>12185</td>
+        <td>13143</td>
+        <td>13990</td>
+        <td>14820</td>
+        <td>15876</td>
+        <td>16803</td>
+        <td>17738</td>
+        <td>18289</td>
+        <td>19333</td>
+        <td>20129</td>
+        <td>21170</td>
+        <td>22230</td>
+        <td>23586</td>
+        <td>24547</td>
+        <td>26134</td>
+        <td>27340</td>
+        <td>27940</td>
+        <td>28596</td>
+        <td>28660</td>
+        <td>29060</td>
+        <td>29995</td>
+        <td>31498</td>
+        <td>32739</td>
+        <td>33895</td>
+        <td>34127</td>
+        <td>33086</td>
+      </tr>
+      <tr id="LC11" class="js-file-line">
+        <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td>Idaho</td>
+        <td>16</td>
+        <td>507</td>
+        <td>503</td>
+        <td>374</td>
+        <td>274</td>
+        <td>227</td>
+        <td>403</td>
+        <td>399</td>
+        <td>475</td>
+        <td>423</td>
+        <td>426</td>
+        <td>437</td>
+        <td>463</td>
+        <td>596</td>
+        <td>914</td>
+        <td>1025</td>
+        <td>1095</td>
+        <td>1135</td>
+        <td>1203</td>
+        <td>1278</td>
+        <td>1345</td>
+        <td>1277</td>
+        <td>1329</td>
+        <td>1497</td>
+        <td>1644</td>
+        <td>1550</td>
+        <td>1559</td>
+        <td>1596</td>
+        <td>1728</td>
+        <td>1783</td>
+        <td>1817</td>
+        <td>1891</td>
+        <td>1898</td>
+        <td>1975</td>
+        <td>2092</td>
+        <td>2168</td>
+        <td>2250</td>
+        <td>2554</td>
+        <td>2591</td>
+        <td>2755</td>
+        <td>2910</td>
+        <td>3269</td>
+        <td>3558</td>
+        <td>3761</td>
+        <td>4150</td>
+        <td>4709</td>
+        <td>5382</td>
+        <td>5571</td>
+        <td>6116</td>
+        <td>6510</td>
+        <td>7319</td>
+        <td>7894</td>
+        <td>8735</td>
+        <td>9405</td>
+        <td>9621</td>
+        <td>10315</td>
+        <td>11069</td>
+        <td>11647</td>
+        <td>11968</td>
+        <td>12611</td>
+        <td>13548</td>
+        <td>14803</td>
+        <td>15866</td>
+        <td>16195</td>
+        <td>17236</td>
+        <td>18258</td>
+        <td>18846</td>
+        <td>19630</td>
+        <td>20353</td>
+        <td>20830</td>
+        <td>21923</td>
+        <td>22835</td>
+        <td>24180</td>
+        <td>25124</td>
+        <td>25485</td>
+        <td>25912</td>
+        <td>27846</td>
+        <td>29003</td>
+        <td>30954</td>
+        <td>32168</td>
+        <td>32322</td>
+        <td>30987</td>
+      </tr>
+      <tr id="LC12" class="js-file-line">
+        <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td>Illinois</td>
+        <td>17</td>
+        <td>948</td>
+        <td>807</td>
+        <td>671</td>
+        <td>486</td>
+        <td>437</td>
+        <td>505</td>
+        <td>573</td>
+        <td>650</td>
+        <td>731</td>
+        <td>648</td>
+        <td>704</td>
+        <td>751</td>
+        <td>892</td>
+        <td>1036</td>
+        <td>1258</td>
+        <td>1386</td>
+        <td>1465</td>
+        <td>1534</td>
+        <td>1639</td>
+        <td>1816</td>
+        <td>1685</td>
+        <td>1831</td>
+        <td>2026</td>
+        <td>2091</td>
+        <td>2209</td>
+        <td>2177</td>
+        <td>2270</td>
+        <td>2452</td>
+        <td>2522</td>
+        <td>2511</td>
+        <td>2642</td>
+        <td>2700</td>
+        <td>2789</td>
+        <td>2902</td>
+        <td>2981</td>
+        <td>3131</td>
+        <td>3360</td>
+        <td>3599</td>
+        <td>3785</td>
+        <td>4045</td>
+        <td>4354</td>
+        <td>4580</td>
+        <td>4874</td>
+        <td>5266</td>
+        <td>5903</td>
+        <td>6464</td>
+        <td>6986</td>
+        <td>7623</td>
+        <td>8385</td>
+        <td>9277</td>
+        <td>10243</td>
+        <td>11077</td>
+        <td>12250</td>
+        <td>12771</td>
+        <td>13289</td>
+        <td>14682</td>
+        <td>15508</td>
+        <td>16284</td>
+        <td>17289</td>
+        <td>18461</td>
+        <td>19634</td>
+        <td>20756</td>
+        <td>21320</td>
+        <td>22764</td>
+        <td>23386</td>
+        <td>24440</td>
+        <td>25643</td>
+        <td>27005</td>
+        <td>28347</td>
+        <td>29974</td>
+        <td>31145</td>
+        <td>32259</td>
+        <td>32808</td>
+        <td>33325</td>
+        <td>34205</td>
+        <td>35599</td>
+        <td>36825</td>
+        <td>39220</td>
+        <td>41238</td>
+        <td>42049</td>
+        <td>40933</td>
+      </tr>
+      <tr id="LC13" class="js-file-line">
+        <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td>Indiana</td>
+        <td>18</td>
+        <td>607</td>
+        <td>514</td>
+        <td>438</td>
+        <td>310</td>
+        <td>294</td>
+        <td>359</td>
+        <td>421</td>
+        <td>481</td>
+        <td>547</td>
+        <td>472</td>
+        <td>518</td>
+        <td>551</td>
+        <td>724</td>
+        <td>913</td>
+        <td>1138</td>
+        <td>1198</td>
+        <td>1251</td>
+        <td>1204</td>
+        <td>1313</td>
+        <td>1456</td>
+        <td>1361</td>
+        <td>1524</td>
+        <td>1711</td>
+        <td>1778</td>
+        <td>1943</td>
+        <td>1805</td>
+        <td>1907</td>
+        <td>2008</td>
+        <td>2042</td>
+        <td>2015</td>
+        <td>2131</td>
+        <td>2209</td>
+        <td>2246</td>
+        <td>2399</td>
+        <td>2486</td>
+        <td>2617</td>
+        <td>2856</td>
+        <td>3041</td>
+        <td>3153</td>
+        <td>3401</td>
+        <td>3714</td>
+        <td>3810</td>
+        <td>4105</td>
+        <td>4455</td>
+        <td>5100</td>
+        <td>5440</td>
+        <td>5830</td>
+        <td>6516</td>
+        <td>7199</td>
+        <td>8006</td>
+        <td>8814</td>
+        <td>9449</td>
+        <td>10355</td>
+        <td>10698</td>
+        <td>11203</td>
+        <td>12445</td>
+        <td>13143</td>
+        <td>13821</td>
+        <td>14664</td>
+        <td>15616</td>
+        <td>16770</td>
+        <td>17625</td>
+        <td>18055</td>
+        <td>19269</td>
+        <td>20112</td>
+        <td>21153</td>
+        <td>21845</td>
+        <td>22775</td>
+        <td>23748</td>
+        <td>25182</td>
+        <td>26143</td>
+        <td>27011</td>
+        <td>27590</td>
+        <td>28059</td>
+        <td>29089</td>
+        <td>30126</td>
+        <td>30768</td>
+        <td>32305</td>
+        <td>33151</td>
+        <td>33978</td>
+        <td>33174</td>
+      </tr>
+      <tr id="LC14" class="js-file-line">
+        <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td>Iowa</td>
+        <td>19</td>
+        <td>581</td>
+        <td>510</td>
+        <td>400</td>
+        <td>297</td>
+        <td>253</td>
+        <td>269</td>
+        <td>425</td>
+        <td>393</td>
+        <td>523</td>
+        <td>458</td>
+        <td>475</td>
+        <td>501</td>
+        <td>609</td>
+        <td>835</td>
+        <td>1024</td>
+        <td>1003</td>
+        <td>1092</td>
+        <td>1245</td>
+        <td>1217</td>
+        <td>1642</td>
+        <td>1356</td>
+        <td>1532</td>
+        <td>1638</td>
+        <td>1725</td>
+        <td>1657</td>
+        <td>1788</td>
+        <td>1670</td>
+        <td>1758</td>
+        <td>1939</td>
+        <td>1990</td>
+        <td>2026</td>
+        <td>2061</td>
+        <td>2180</td>
+        <td>2284</td>
+        <td>2432</td>
+        <td>2549</td>
+        <td>2833</td>
+        <td>3067</td>
+        <td>3093</td>
+        <td>3312</td>
+        <td>3652</td>
+        <td>3862</td>
+        <td>4005</td>
+        <td>4473</td>
+        <td>5398</td>
+        <td>5596</td>
+        <td>6192</td>
+        <td>6580</td>
+        <td>7283</td>
+        <td>8438</td>
+        <td>9114</td>
+        <td>9671</td>
+        <td>10968</td>
+        <td>11227</td>
+        <td>11485</td>
+        <td>12798</td>
+        <td>13395</td>
+        <td>14020</td>
+        <td>14899</td>
+        <td>15315</td>
+        <td>16562</td>
+        <td>17380</td>
+        <td>17859</td>
+        <td>18939</td>
+        <td>18929</td>
+        <td>20498</td>
+        <td>21181</td>
+        <td>22713</td>
+        <td>23798</td>
+        <td>24844</td>
+        <td>25615</td>
+        <td>26723</td>
+        <td>27315</td>
+        <td>28232</td>
+        <td>28835</td>
+        <td>31027</td>
+        <td>31656</td>
+        <td>33177</td>
+        <td>35008</td>
+        <td>36726</td>
+        <td>35983</td>
+      </tr>
+      <tr id="LC15" class="js-file-line">
+        <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td>Kansas</td>
+        <td>20</td>
+        <td>532</td>
+        <td>467</td>
+        <td>401</td>
+        <td>266</td>
+        <td>250</td>
+        <td>287</td>
+        <td>362</td>
+        <td>387</td>
+        <td>428</td>
+        <td>383</td>
+        <td>382</td>
+        <td>425</td>
+        <td>552</td>
+        <td>851</td>
+        <td>1045</td>
+        <td>1169</td>
+        <td>1165</td>
+        <td>1136</td>
+        <td>1310</td>
+        <td>1352</td>
+        <td>1299</td>
+        <td>1463</td>
+        <td>1602</td>
+        <td>1827</td>
+        <td>1739</td>
+        <td>1791</td>
+        <td>1753</td>
+        <td>1821</td>
+        <td>1911</td>
+        <td>2098</td>
+        <td>2106</td>
+        <td>2165</td>
+        <td>2227</td>
+        <td>2305</td>
+        <td>2384</td>
+        <td>2516</td>
+        <td>2689</td>
+        <td>2894</td>
+        <td>3032</td>
+        <td>3268</td>
+        <td>3548</td>
+        <td>3816</td>
+        <td>4145</td>
+        <td>4613</td>
+        <td>5274</td>
+        <td>5717</td>
+        <td>6186</td>
+        <td>6721</td>
+        <td>7307</td>
+        <td>8082</td>
+        <td>9240</td>
+        <td>10038</td>
+        <td>11248</td>
+        <td>11989</td>
+        <td>12373</td>
+        <td>13602</td>
+        <td>14330</td>
+        <td>14904</td>
+        <td>15583</td>
+        <td>16331</td>
+        <td>17093</td>
+        <td>18182</td>
+        <td>18832</td>
+        <td>19955</td>
+        <td>20510</td>
+        <td>21352</td>
+        <td>21889</td>
+        <td>23121</td>
+        <td>24355</td>
+        <td>25687</td>
+        <td>26824</td>
+        <td>27816</td>
+        <td>28979</td>
+        <td>29067</td>
+        <td>30109</td>
+        <td>31181</td>
+        <td>32367</td>
+        <td>34934</td>
+        <td>36546</td>
+        <td>37983</td>
+        <td>37036</td>
+      </tr>
+      <tr id="LC16" class="js-file-line">
+        <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td>Kentucky</td>
+        <td>21</td>
+        <td>393</td>
+        <td>325</td>
+        <td>291</td>
+        <td>211</td>
+        <td>205</td>
+        <td>233</td>
+        <td>265</td>
+        <td>294</td>
+        <td>341</td>
+        <td>297</td>
+        <td>305</td>
+        <td>320</td>
+        <td>395</td>
+        <td>538</td>
+        <td>701</td>
+        <td>767</td>
+        <td>803</td>
+        <td>826</td>
+        <td>865</td>
+        <td>995</td>
+        <td>938</td>
+        <td>990</td>
+        <td>1153</td>
+        <td>1237</td>
+        <td>1305</td>
+        <td>1289</td>
+        <td>1346</td>
+        <td>1437</td>
+        <td>1491</td>
+        <td>1543</td>
+        <td>1604</td>
+        <td>1633</td>
+        <td>1731</td>
+        <td>1822</td>
+        <td>1906</td>
+        <td>1972</td>
+        <td>2134</td>
+        <td>2329</td>
+        <td>2501</td>
+        <td>2718</td>
+        <td>2971</td>
+        <td>3184</td>
+        <td>3391</td>
+        <td>3715</td>
+        <td>4145</td>
+        <td>4607</td>
+        <td>4933</td>
+        <td>5462</td>
+        <td>6095</td>
+        <td>6784</td>
+        <td>7640</td>
+        <td>8231</td>
+        <td>9110</td>
+        <td>9589</td>
+        <td>9859</td>
+        <td>11062</td>
+        <td>11558</td>
+        <td>11995</td>
+        <td>12782</td>
+        <td>13570</td>
+        <td>14602</td>
+        <td>15484</td>
+        <td>16241</td>
+        <td>17320</td>
+        <td>17815</td>
+        <td>18514</td>
+        <td>19215</td>
+        <td>20155</td>
+        <td>21215</td>
+        <td>22353</td>
+        <td>23237</td>
+        <td>24294</td>
+        <td>24816</td>
+        <td>25297</td>
+        <td>25777</td>
+        <td>26891</td>
+        <td>27881</td>
+        <td>29392</td>
+        <td>30443</td>
+        <td>31302</td>
+        <td>31250</td>
+      </tr>
+      <tr id="LC17" class="js-file-line">
+        <td id="L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td>Louisiana</td>
+        <td>22</td>
+        <td>414</td>
+        <td>355</td>
+        <td>318</td>
+        <td>241</td>
+        <td>227</td>
+        <td>265</td>
+        <td>290</td>
+        <td>330</td>
+        <td>353</td>
+        <td>348</td>
+        <td>360</td>
+        <td>364</td>
+        <td>449</td>
+        <td>592</td>
+        <td>786</td>
+        <td>876</td>
+        <td>889</td>
+        <td>833</td>
+        <td>885</td>
+        <td>1019</td>
+        <td>1074</td>
+        <td>1117</td>
+        <td>1210</td>
+        <td>1278</td>
+        <td>1343</td>
+        <td>1339</td>
+        <td>1397</td>
+        <td>1502</td>
+        <td>1616</td>
+        <td>1635</td>
+        <td>1685</td>
+        <td>1690</td>
+        <td>1741</td>
+        <td>1806</td>
+        <td>1909</td>
+        <td>2003</td>
+        <td>2139</td>
+        <td>2331</td>
+        <td>2527</td>
+        <td>2749</td>
+        <td>2901</td>
+        <td>3106</td>
+        <td>3328</td>
+        <td>3593</td>
+        <td>3994</td>
+        <td>4510</td>
+        <td>4956</td>
+        <td>5557</td>
+        <td>6135</td>
+        <td>6951</td>
+        <td>7813</td>
+        <td>8833</td>
+        <td>10037</td>
+        <td>10558</td>
+        <td>10865</td>
+        <td>11628</td>
+        <td>12121</td>
+        <td>12028</td>
+        <td>12266</td>
+        <td>13113</td>
+        <td>13997</td>
+        <td>15223</td>
+        <td>16076</td>
+        <td>16968</td>
+        <td>17717</td>
+        <td>18779</td>
+        <td>19541</td>
+        <td>20254</td>
+        <td>21209</td>
+        <td>22352</td>
+        <td>22847</td>
+        <td>23334</td>
+        <td>25116</td>
+        <td>25683</td>
+        <td>26434</td>
+        <td>27776</td>
+        <td>29785</td>
+        <td>33438</td>
+        <td>34986</td>
+        <td>35730</td>
+        <td>35151</td>
+      </tr>
+      <tr id="LC18" class="js-file-line">
+        <td id="L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td>Maine</td>
+        <td>23</td>
+        <td>601</td>
+        <td>576</td>
+        <td>491</td>
+        <td>377</td>
+        <td>371</td>
+        <td>416</td>
+        <td>430</td>
+        <td>506</td>
+        <td>510</td>
+        <td>471</td>
+        <td>495</td>
+        <td>526</td>
+        <td>631</td>
+        <td>857</td>
+        <td>1102</td>
+        <td>1102</td>
+        <td>1079</td>
+        <td>1134</td>
+        <td>1169</td>
+        <td>1240</td>
+        <td>1183</td>
+        <td>1195</td>
+        <td>1319</td>
+        <td>1438</td>
+        <td>1449</td>
+        <td>1448</td>
+        <td>1581</td>
+        <td>1669</td>
+        <td>1720</td>
+        <td>1797</td>
+        <td>1850</td>
+        <td>1919</td>
+        <td>1903</td>
+        <td>1983</td>
+        <td>2049</td>
+        <td>2212</td>
+        <td>2383</td>
+        <td>2539</td>
+        <td>2658</td>
+        <td>2872</td>
+        <td>3140</td>
+        <td>3423</td>
+        <td>3594</td>
+        <td>3864</td>
+        <td>4319</td>
+        <td>4764</td>
+        <td>5019</td>
+        <td>5708</td>
+        <td>6142</td>
+        <td>6751</td>
+        <td>7497</td>
+        <td>8408</td>
+        <td>9231</td>
+        <td>9873</td>
+        <td>10551</td>
+        <td>11665</td>
+        <td>12533</td>
+        <td>13463</td>
+        <td>14595</td>
+        <td>15813</td>
+        <td>16886</td>
+        <td>17479</td>
+        <td>17662</td>
+        <td>18350</td>
+        <td>18810</td>
+        <td>19531</td>
+        <td>20240</td>
+        <td>21293</td>
+        <td>22305</td>
+        <td>23529</td>
+        <td>24603</td>
+        <td>25623</td>
+        <td>27068</td>
+        <td>27731</td>
+        <td>28727</td>
+        <td>30201</td>
+        <td>30721</td>
+        <td>32340</td>
+        <td>33620</td>
+        <td>34906</td>
+        <td>35268</td>
+      </tr>
+      <tr id="LC19" class="js-file-line">
+        <td id="L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td>Maryland</td>
+        <td>24</td>
+        <td>768</td>
+        <td>712</td>
+        <td>638</td>
+        <td>512</td>
+        <td>466</td>
+        <td>523</td>
+        <td>548</td>
+        <td>618</td>
+        <td>665</td>
+        <td>633</td>
+        <td>663</td>
+        <td>710</td>
+        <td>870</td>
+        <td>1117</td>
+        <td>1287</td>
+        <td>1324</td>
+        <td>1312</td>
+        <td>1315</td>
+        <td>1355</td>
+        <td>1500</td>
+        <td>1496</td>
+        <td>1642</td>
+        <td>1815</td>
+        <td>1944</td>
+        <td>2017</td>
+        <td>1938</td>
+        <td>2047</td>
+        <td>2184</td>
+        <td>2267</td>
+        <td>2258</td>
+        <td>2324</td>
+        <td>2407</td>
+        <td>2507</td>
+        <td>2638</td>
+        <td>2722</td>
+        <td>2881</td>
+        <td>3055</td>
+        <td>3284</td>
+        <td>3516</td>
+        <td>3831</td>
+        <td>4209</td>
+        <td>4573</td>
+        <td>4894</td>
+        <td>5291</td>
+        <td>5822</td>
+        <td>6382</td>
+        <td>6878</td>
+        <td>7536</td>
+        <td>8191</td>
+        <td>9062</td>
+        <td>10035</td>
+        <td>11230</td>
+        <td>12403</td>
+        <td>13246</td>
+        <td>14228</td>
+        <td>15693</td>
+        <td>16961</td>
+        <td>17966</td>
+        <td>19216</td>
+        <td>20626</td>
+        <td>22001</td>
+        <td>23023</td>
+        <td>23571</td>
+        <td>24358</td>
+        <td>25104</td>
+        <td>26046</td>
+        <td>26896</td>
+        <td>27844</td>
+        <td>29222</td>
+        <td>30850</td>
+        <td>32465</td>
+        <td>33872</td>
+        <td>35430</td>
+        <td>36293</td>
+        <td>37309</td>
+        <td>39651</td>
+        <td>41555</td>
+        <td>43990</td>
+        <td>45827</td>
+        <td>47040</td>
+        <td>47159</td>
+      </tr>
+      <tr id="LC20" class="js-file-line">
+        <td id="L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td>Massachusetts</td>
+        <td>25</td>
+        <td>906</td>
+        <td>836</td>
+        <td>759</td>
+        <td>613</td>
+        <td>559</td>
+        <td>609</td>
+        <td>643</td>
+        <td>714</td>
+        <td>732</td>
+        <td>672</td>
+        <td>724</td>
+        <td>779</td>
+        <td>901</td>
+        <td>1073</td>
+        <td>1262</td>
+        <td>1299</td>
+        <td>1348</td>
+        <td>1396</td>
+        <td>1435</td>
+        <td>1512</td>
+        <td>1480</td>
+        <td>1656</td>
+        <td>1817</td>
+        <td>1895</td>
+        <td>1947</td>
+        <td>1930</td>
+        <td>2071</td>
+        <td>2194</td>
+        <td>2296</td>
+        <td>2321</td>
+        <td>2430</td>
+        <td>2511</td>
+        <td>2605</td>
+        <td>2734</td>
+        <td>2799</td>
+        <td>2932</td>
+        <td>3101</td>
+        <td>3331</td>
+        <td>3583</td>
+        <td>3903</td>
+        <td>4207</td>
+        <td>4486</td>
+        <td>4748</td>
+        <td>5106</td>
+        <td>5551</td>
+        <td>6024</td>
+        <td>6439</td>
+        <td>6994</td>
+        <td>7636</td>
+        <td>8480</td>
+        <td>9472</td>
+        <td>10673</td>
+        <td>11830</td>
+        <td>12803</td>
+        <td>13859</td>
+        <td>15549</td>
+        <td>16720</td>
+        <td>17954</td>
+        <td>19504</td>
+        <td>21334</td>
+        <td>22458</td>
+        <td>23223</td>
+        <td>23749</td>
+        <td>24876</td>
+        <td>25664</td>
+        <td>26841</td>
+        <td>28051</td>
+        <td>29618</td>
+        <td>31332</td>
+        <td>33394</td>
+        <td>35551</td>
+        <td>37992</td>
+        <td>39247</td>
+        <td>39238</td>
+        <td>39869</td>
+        <td>41792</td>
+        <td>43520</td>
+        <td>46893</td>
+        <td>49361</td>
+        <td>50607</td>
+        <td>49590</td>
+      </tr>
+      <tr id="LC21" class="js-file-line">
+        <td id="L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td>Michigan</td>
+        <td>26</td>
+        <td>790</td>
+        <td>657</td>
+        <td>540</td>
+        <td>394</td>
+        <td>347</td>
+        <td>453</td>
+        <td>530</td>
+        <td>619</td>
+        <td>685</td>
+        <td>572</td>
+        <td>625</td>
+        <td>680</td>
+        <td>829</td>
+        <td>1050</td>
+        <td>1354</td>
+        <td>1391</td>
+        <td>1325</td>
+        <td>1329</td>
+        <td>1466</td>
+        <td>1563</td>
+        <td>1527</td>
+        <td>1718</td>
+        <td>1896</td>
+        <td>1985</td>
+        <td>2202</td>
+        <td>2076</td>
+        <td>2238</td>
+        <td>2275</td>
+        <td>2309</td>
+        <td>2246</td>
+        <td>2358</td>
+        <td>2438</td>
+        <td>2427</td>
+        <td>2592</td>
+        <td>2728</td>
+        <td>2949</td>
+        <td>3215</td>
+        <td>3450</td>
+        <td>3554</td>
+        <td>3906</td>
+        <td>4145</td>
+        <td>4194</td>
+        <td>4501</td>
+        <td>4966</td>
+        <td>5552</td>
+        <td>5926</td>
+        <td>6279</td>
+        <td>7084</td>
+        <td>7957</td>
+        <td>8834</td>
+        <td>9701</td>
+        <td>10369</td>
+        <td>11125</td>
+        <td>11462</td>
+        <td>12243</td>
+        <td>13576</td>
+        <td>14734</td>
+        <td>15573</td>
+        <td>16130</td>
+        <td>17198</td>
+        <td>18276</td>
+        <td>19022</td>
+        <td>19318</td>
+        <td>20278</td>
+        <td>21390</td>
+        <td>22862</td>
+        <td>23975</td>
+        <td>24447</td>
+        <td>25570</td>
+        <td>26807</td>
+        <td>28113</td>
+        <td>29612</td>
+        <td>30196</td>
+        <td>30410</td>
+        <td>31446</td>
+        <td>31890</td>
+        <td>32516</td>
+        <td>33452</td>
+        <td>34441</td>
+        <td>35215</td>
+        <td>34280</td>
+      </tr>
+      <tr id="LC22" class="js-file-line">
+        <td id="L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td>Minnesota</td>
+        <td>27</td>
+        <td>599</td>
+        <td>552</td>
+        <td>457</td>
+        <td>363</td>
+        <td>308</td>
+        <td>358</td>
+        <td>451</td>
+        <td>472</td>
+        <td>540</td>
+        <td>494</td>
+        <td>517</td>
+        <td>524</td>
+        <td>615</td>
+        <td>797</td>
+        <td>947</td>
+        <td>1006</td>
+        <td>1110</td>
+        <td>1190</td>
+        <td>1270</td>
+        <td>1451</td>
+        <td>1328</td>
+        <td>1437</td>
+        <td>1582</td>
+        <td>1633</td>
+        <td>1711</td>
+        <td>1724</td>
+        <td>1790</td>
+        <td>1838</td>
+        <td>1930</td>
+        <td>2016</td>
+        <td>2065</td>
+        <td>2155</td>
+        <td>2236</td>
+        <td>2331</td>
+        <td>2460</td>
+        <td>2540</td>
+        <td>2781</td>
+        <td>2997</td>
+        <td>3182</td>
+        <td>3463</td>
+        <td>3779</td>
+        <td>4053</td>
+        <td>4275</td>
+        <td>4628</td>
+        <td>5431</td>
+        <td>5838</td>
+        <td>6216</td>
+        <td>6729</td>
+        <td>7559</td>
+        <td>8471</td>
+        <td>9409</td>
+        <td>10320</td>
+        <td>11320</td>
+        <td>11992</td>
+        <td>12594</td>
+        <td>14255</td>
+        <td>15093</td>
+        <td>15881</td>
+        <td>16899</td>
+        <td>17592</td>
+        <td>18966</td>
+        <td>20011</td>
+        <td>20489</td>
+        <td>21698</td>
+        <td>22068</td>
+        <td>23467</td>
+        <td>24583</td>
+        <td>26267</td>
+        <td>27548</td>
+        <td>29503</td>
+        <td>30793</td>
+        <td>32101</td>
+        <td>32835</td>
+        <td>33553</td>
+        <td>34744</td>
+        <td>36505</td>
+        <td>37400</td>
+        <td>39367</td>
+        <td>41059</td>
+        <td>42299</td>
+        <td>40920</td>
+      </tr>
+      <tr id="LC23" class="js-file-line">
+        <td id="L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td>Mississippi</td>
+        <td>28</td>
+        <td>286</td>
+        <td>202</td>
+        <td>175</td>
+        <td>127</td>
+        <td>131</td>
+        <td>174</td>
+        <td>177</td>
+        <td>229</td>
+        <td>224</td>
+        <td>201</td>
+        <td>205</td>
+        <td>215</td>
+        <td>307</td>
+        <td>439</td>
+        <td>533</td>
+        <td>629</td>
+        <td>629</td>
+        <td>611</td>
+        <td>670</td>
+        <td>802</td>
+        <td>705</td>
+        <td>770</td>
+        <td>851</td>
+        <td>906</td>
+        <td>940</td>
+        <td>928</td>
+        <td>1045</td>
+        <td>1051</td>
+        <td>1063</td>
+        <td>1156</td>
+        <td>1245</td>
+        <td>1237</td>
+        <td>1322</td>
+        <td>1362</td>
+        <td>1499</td>
+        <td>1557</td>
+        <td>1688</td>
+        <td>1839</td>
+        <td>2001</td>
+        <td>2197</td>
+        <td>2408</td>
+        <td>2641</td>
+        <td>2867</td>
+        <td>3208</td>
+        <td>3613</td>
+        <td>3936</td>
+        <td>4205</td>
+        <td>4757</td>
+        <td>5259</td>
+        <td>5806</td>
+        <td>6549</td>
+        <td>7076</td>
+        <td>7901</td>
+        <td>8301</td>
+        <td>8615</td>
+        <td>9463</td>
+        <td>9922</td>
+        <td>10293</td>
+        <td>10913</td>
+        <td>11695</td>
+        <td>12540</td>
+        <td>13164</td>
+        <td>13806</td>
+        <td>14711</td>
+        <td>15468</td>
+        <td>16549</td>
+        <td>17185</td>
+        <td>18044</td>
+        <td>18885</td>
+        <td>20013</td>
+        <td>20688</td>
+        <td>20993</td>
+        <td>22222</td>
+        <td>22540</td>
+        <td>23365</td>
+        <td>24501</td>
+        <td>26120</td>
+        <td>27276</td>
+        <td>28772</td>
+        <td>29591</td>
+        <td>29318</td>
+      </tr>
+      <tr id="LC24" class="js-file-line">
+        <td id="L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td>Missouri</td>
+        <td>29</td>
+        <td>621</td>
+        <td>561</td>
+        <td>491</td>
+        <td>365</td>
+        <td>334</td>
+        <td>367</td>
+        <td>420</td>
+        <td>466</td>
+        <td>508</td>
+        <td>475</td>
+        <td>504</td>
+        <td>519</td>
+        <td>640</td>
+        <td>806</td>
+        <td>963</td>
+        <td>1068</td>
+        <td>1130</td>
+        <td>1191</td>
+        <td>1224</td>
+        <td>1376</td>
+        <td>1327</td>
+        <td>1427</td>
+        <td>1554</td>
+        <td>1659</td>
+        <td>1737</td>
+        <td>1726</td>
+        <td>1818</td>
+        <td>1905</td>
+        <td>1949</td>
+        <td>2044</td>
+        <td>2126</td>
+        <td>2156</td>
+        <td>2215</td>
+        <td>2330</td>
+        <td>2427</td>
+        <td>2533</td>
+        <td>2738</td>
+        <td>2895</td>
+        <td>3067</td>
+        <td>3370</td>
+        <td>3561</td>
+        <td>3843</td>
+        <td>4107</td>
+        <td>4443</td>
+        <td>4937</td>
+        <td>5282</td>
+        <td>5733</td>
+        <td>6306</td>
+        <td>6991</td>
+        <td>7787</td>
+        <td>8713</td>
+        <td>9390</td>
+        <td>10457</td>
+        <td>11035</td>
+        <td>11716</td>
+        <td>12960</td>
+        <td>13868</td>
+        <td>14505</td>
+        <td>15250</td>
+        <td>16086</td>
+        <td>17083</td>
+        <td>17751</td>
+        <td>18560</td>
+        <td>19542</td>
+        <td>20295</td>
+        <td>21267</td>
+        <td>22094</td>
+        <td>23099</td>
+        <td>24252</td>
+        <td>25403</td>
+        <td>26376</td>
+        <td>27445</td>
+        <td>28156</td>
+        <td>28771</td>
+        <td>29702</td>
+        <td>30847</td>
+        <td>31644</td>
+        <td>33354</td>
+        <td>34558</td>
+        <td>35775</td>
+        <td>35106</td>
+      </tr>
+      <tr id="LC25" class="js-file-line">
+        <td id="L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td>Montana</td>
+        <td>30</td>
+        <td>592</td>
+        <td>501</td>
+        <td>382</td>
+        <td>339</td>
+        <td>298</td>
+        <td>364</td>
+        <td>476</td>
+        <td>475</td>
+        <td>512</td>
+        <td>517</td>
+        <td>533</td>
+        <td>569</td>
+        <td>713</td>
+        <td>901</td>
+        <td>1150</td>
+        <td>1183</td>
+        <td>1206</td>
+        <td>1308</td>
+        <td>1484</td>
+        <td>1642</td>
+        <td>1412</td>
+        <td>1654</td>
+        <td>1806</td>
+        <td>1823</td>
+        <td>1810</td>
+        <td>1771</td>
+        <td>1894</td>
+        <td>1929</td>
+        <td>1983</td>
+        <td>2068</td>
+        <td>2023</td>
+        <td>2075</td>
+        <td>2025</td>
+        <td>2363</td>
+        <td>2330</td>
+        <td>2366</td>
+        <td>2548</td>
+        <td>2730</td>
+        <td>2805</td>
+        <td>2955</td>
+        <td>3284</td>
+        <td>3625</td>
+        <td>3789</td>
+        <td>4355</td>
+        <td>5012</td>
+        <td>5380</td>
+        <td>5794</td>
+        <td>6200</td>
+        <td>6636</td>
+        <td>7721</td>
+        <td>8299</td>
+        <td>9143</td>
+        <td>10244</td>
+        <td>10672</td>
+        <td>11045</td>
+        <td>11705</td>
+        <td>11900</td>
+        <td>12465</td>
+        <td>12996</td>
+        <td>13362</td>
+        <td>14623</td>
+        <td>15524</td>
+        <td>16509</td>
+        <td>17114</td>
+        <td>18072</td>
+        <td>18129</td>
+        <td>18764</td>
+        <td>19383</td>
+        <td>20167</td>
+        <td>21324</td>
+        <td>22019</td>
+        <td>22569</td>
+        <td>24342</td>
+        <td>24699</td>
+        <td>25963</td>
+        <td>27517</td>
+        <td>28987</td>
+        <td>30942</td>
+        <td>32625</td>
+        <td>33293</td>
+        <td>32699</td>
+      </tr>
+      <tr id="LC26" class="js-file-line">
+        <td id="L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td>Nebraska</td>
+        <td>31</td>
+        <td>596</td>
+        <td>521</td>
+        <td>413</td>
+        <td>307</td>
+        <td>275</td>
+        <td>259</td>
+        <td>409</td>
+        <td>396</td>
+        <td>415</td>
+        <td>405</td>
+        <td>400</td>
+        <td>442</td>
+        <td>551</td>
+        <td>822</td>
+        <td>1019</td>
+        <td>1091</td>
+        <td>1186</td>
+        <td>1186</td>
+        <td>1274</td>
+        <td>1558</td>
+        <td>1346</td>
+        <td>1560</td>
+        <td>1641</td>
+        <td>1761</td>
+        <td>1676</td>
+        <td>1753</td>
+        <td>1650</td>
+        <td>1675</td>
+        <td>1936</td>
+        <td>2025</td>
+        <td>2022</td>
+        <td>2125</td>
+        <td>2134</td>
+        <td>2292</td>
+        <td>2341</td>
+        <td>2392</td>
+        <td>2656</td>
+        <td>2890</td>
+        <td>2990</td>
+        <td>3167</td>
+        <td>3572</td>
+        <td>3796</td>
+        <td>4121</td>
+        <td>4527</td>
+        <td>5269</td>
+        <td>5465</td>
+        <td>6168</td>
+        <td>6453</td>
+        <td>6993</td>
+        <td>8120</td>
+        <td>8784</td>
+        <td>9272</td>
+        <td>10685</td>
+        <td>11228</td>
+        <td>11601</td>
+        <td>12968</td>
+        <td>13743</td>
+        <td>14215</td>
+        <td>15035</td>
+        <td>15984</td>
+        <td>16878</td>
+        <td>18088</td>
+        <td>18766</td>
+        <td>19688</td>
+        <td>20167</td>
+        <td>21168</td>
+        <td>22196</td>
+        <td>24045</td>
+        <td>24590</td>
+        <td>25861</td>
+        <td>27049</td>
+        <td>27829</td>
+        <td>29098</td>
+        <td>29499</td>
+        <td>31262</td>
+        <td>32371</td>
+        <td>33395</td>
+        <td>34753</td>
+        <td>36880</td>
+        <td>38128</td>
+        <td>37057</td>
+      </tr>
+      <tr id="LC27" class="js-file-line">
+        <td id="L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td>Nevada</td>
+        <td>32</td>
+        <td>868</td>
+        <td>833</td>
+        <td>652</td>
+        <td>550</td>
+        <td>495</td>
+        <td>546</td>
+        <td>658</td>
+        <td>843</td>
+        <td>762</td>
+        <td>780</td>
+        <td>861</td>
+        <td>895</td>
+        <td>982</td>
+        <td>1558</td>
+        <td>1511</td>
+        <td>1483</td>
+        <td>1611</td>
+        <td>1757</td>
+        <td>1770</td>
+        <td>1758</td>
+        <td>1795</td>
+        <td>1991</td>
+        <td>2211</td>
+        <td>2397</td>
+        <td>2447</td>
+        <td>2415</td>
+        <td>2527</td>
+        <td>2488</td>
+        <td>2562</td>
+        <td>2594</td>
+        <td>2749</td>
+        <td>2890</td>
+        <td>2957</td>
+        <td>3184</td>
+        <td>3174</td>
+        <td>3209</td>
+        <td>3299</td>
+        <td>3471</td>
+        <td>3660</td>
+        <td>4114</td>
+        <td>4520</td>
+        <td>4946</td>
+        <td>5227</td>
+        <td>5557</td>
+        <td>6114</td>
+        <td>6490</td>
+        <td>7009</td>
+        <td>7719</td>
+        <td>8550</td>
+        <td>9780</td>
+        <td>10765</td>
+        <td>11780</td>
+        <td>12780</td>
+        <td>12986</td>
+        <td>13465</td>
+        <td>14435</td>
+        <td>15332</td>
+        <td>16027</td>
+        <td>16886</td>
+        <td>18180</td>
+        <td>19568</td>
+        <td>20674</td>
+        <td>21283</td>
+        <td>22694</td>
+        <td>23465</td>
+        <td>24635</td>
+        <td>25808</td>
+        <td>27142</td>
+        <td>28201</td>
+        <td>29806</td>
+        <td>31022</td>
+        <td>30529</td>
+        <td>30718</td>
+        <td>30849</td>
+        <td>32182</td>
+        <td>34757</td>
+        <td>37555</td>
+        <td>38652</td>
+        <td>40326</td>
+        <td>40332</td>
+        <td>38009</td>
+      </tr>
+      <tr id="LC28" class="js-file-line">
+        <td id="L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td>New Hampshire</td>
+        <td>33</td>
+        <td>686</td>
+        <td>647</td>
+        <td>558</td>
+        <td>427</td>
+        <td>416</td>
+        <td>476</td>
+        <td>498</td>
+        <td>537</td>
+        <td>565</td>
+        <td>533</td>
+        <td>561</td>
+        <td>579</td>
+        <td>708</td>
+        <td>851</td>
+        <td>976</td>
+        <td>1054</td>
+        <td>1111</td>
+        <td>1150</td>
+        <td>1217</td>
+        <td>1291</td>
+        <td>1274</td>
+        <td>1348</td>
+        <td>1508</td>
+        <td>1577</td>
+        <td>1653</td>
+        <td>1703</td>
+        <td>1829</td>
+        <td>1900</td>
+        <td>2007</td>
+        <td>2004</td>
+        <td>2124</td>
+        <td>2197</td>
+        <td>2281</td>
+        <td>2392</td>
+        <td>2427</td>
+        <td>2552</td>
+        <td>2708</td>
+        <td>2963</td>
+        <td>3162</td>
+        <td>3441</td>
+        <td>3744</td>
+        <td>3896</td>
+        <td>4102</td>
+        <td>4423</td>
+        <td>4880</td>
+        <td>5279</td>
+        <td>5592</td>
+        <td>6258</td>
+        <td>6892</td>
+        <td>7786</td>
+        <td>8781</td>
+        <td>9915</td>
+        <td>11079</td>
+        <td>11906</td>
+        <td>13041</td>
+        <td>14534</td>
+        <td>15819</td>
+        <td>16974</td>
+        <td>18371</td>
+        <td>19759</td>
+        <td>20635</td>
+        <td>20713</td>
+        <td>21326</td>
+        <td>22154</td>
+        <td>22521</td>
+        <td>23820</td>
+        <td>25008</td>
+        <td>26042</td>
+        <td>27607</td>
+        <td>29679</td>
+        <td>31114</td>
+        <td>33332</td>
+        <td>33940</td>
+        <td>34335</td>
+        <td>34892</td>
+        <td>36758</td>
+        <td>37536</td>
+        <td>39997</td>
+        <td>41720</td>
+        <td>42461</td>
+        <td>41882</td>
+      </tr>
+      <tr id="LC29" class="js-file-line">
+        <td id="L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td>New Jersey</td>
+        <td>34</td>
+        <td>918</td>
+        <td>847</td>
+        <td>736</td>
+        <td>587</td>
+        <td>523</td>
+        <td>573</td>
+        <td>625</td>
+        <td>709</td>
+        <td>747</td>
+        <td>697</td>
+        <td>749</td>
+        <td>820</td>
+        <td>957</td>
+        <td>1167</td>
+        <td>1429</td>
+        <td>1554</td>
+        <td>1582</td>
+        <td>1526</td>
+        <td>1571</td>
+        <td>1648</td>
+        <td>1624</td>
+        <td>1802</td>
+        <td>2000</td>
+        <td>2114</td>
+        <td>2232</td>
+        <td>2219</td>
+        <td>2300</td>
+        <td>2448</td>
+        <td>2551</td>
+        <td>2525</td>
+        <td>2660</td>
+        <td>2764</td>
+        <td>2830</td>
+        <td>2990</td>
+        <td>3064</td>
+        <td>3224</td>
+        <td>3414</td>
+        <td>3652</td>
+        <td>3892</td>
+        <td>4237</td>
+        <td>4525</td>
+        <td>4835</td>
+        <td>5127</td>
+        <td>5521</td>
+        <td>6043</td>
+        <td>6576</td>
+        <td>7037</td>
+        <td>7703</td>
+        <td>8462</td>
+        <td>9408</td>
+        <td>10469</td>
+        <td>11778</td>
+        <td>13057</td>
+        <td>13999</td>
+        <td>15036</td>
+        <td>16549</td>
+        <td>17652</td>
+        <td>18711</td>
+        <td>20230</td>
+        <td>22142</td>
+        <td>23595</td>
+        <td>24766</td>
+        <td>25153</td>
+        <td>26597</td>
+        <td>27101</td>
+        <td>27885</td>
+        <td>29277</td>
+        <td>30795</td>
+        <td>32372</td>
+        <td>34310</td>
+        <td>35551</td>
+        <td>36983</td>
+        <td>37959</td>
+        <td>38240</td>
+        <td>38768</td>
+        <td>40603</td>
+        <td>42142</td>
+        <td>45668</td>
+        <td>48172</td>
+        <td>49233</td>
+        <td>48123</td>
+      </tr>
+      <tr id="LC30" class="js-file-line">
+        <td id="L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td>New Mexico</td>
+        <td>35</td>
+        <td>410</td>
+        <td>334</td>
+        <td>289</td>
+        <td>208</td>
+        <td>211</td>
+        <td>247</td>
+        <td>292</td>
+        <td>343</td>
+        <td>362</td>
+        <td>338</td>
+        <td>357</td>
+        <td>378</td>
+        <td>474</td>
+        <td>636</td>
+        <td>773</td>
+        <td>881</td>
+        <td>942</td>
+        <td>929</td>
+        <td>1013</td>
+        <td>1124</td>
+        <td>1145</td>
+        <td>1204</td>
+        <td>1346</td>
+        <td>1423</td>
+        <td>1444</td>
+        <td>1462</td>
+        <td>1543</td>
+        <td>1626</td>
+        <td>1733</td>
+        <td>1825</td>
+        <td>1895</td>
+        <td>1884</td>
+        <td>1952</td>
+        <td>2006</td>
+        <td>2054</td>
+        <td>2134</td>
+        <td>2250</td>
+        <td>2386</td>
+        <td>2490</td>
+        <td>2709</td>
+        <td>2921</td>
+        <td>3197</td>
+        <td>3431</td>
+        <td>3761</td>
+        <td>4137</td>
+        <td>4568</td>
+        <td>5045</td>
+        <td>5527</td>
+        <td>6087</td>
+        <td>6847</td>
+        <td>7619</td>
+        <td>8402</td>
+        <td>9334</td>
+        <td>9894</td>
+        <td>10367</td>
+        <td>11215</td>
+        <td>11999</td>
+        <td>12226</td>
+        <td>12686</td>
+        <td>13322</td>
+        <td>14085</td>
+        <td>14960</td>
+        <td>15744</td>
+        <td>16425</td>
+        <td>17226</td>
+        <td>17946</td>
+        <td>18852</td>
+        <td>19478</td>
+        <td>20233</td>
+        <td>21178</td>
+        <td>21853</td>
+        <td>22203</td>
+        <td>24193</td>
+        <td>24446</td>
+        <td>25128</td>
+        <td>26606</td>
+        <td>28180</td>
+        <td>29778</td>
+        <td>31320</td>
+        <td>32585</td>
+        <td>32197</td>
+      </tr>
+      <tr id="LC31" class="js-file-line">
+        <td id="L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td>New York</td>
+        <td>36</td>
+        <td>1152</td>
+        <td>1035</td>
+        <td>881</td>
+        <td>676</td>
+        <td>626</td>
+        <td>680</td>
+        <td>722</td>
+        <td>808</td>
+        <td>838</td>
+        <td>789</td>
+        <td>825</td>
+        <td>869</td>
+        <td>996</td>
+        <td>1169</td>
+        <td>1384</td>
+        <td>1538</td>
+        <td>1644</td>
+        <td>1697</td>
+        <td>1725</td>
+        <td>1771</td>
+        <td>1729</td>
+        <td>1858</td>
+        <td>2002</td>
+        <td>2057</td>
+        <td>2144</td>
+        <td>2175</td>
+        <td>2295</td>
+        <td>2416</td>
+        <td>2522</td>
+        <td>2553</td>
+        <td>2695</td>
+        <td>2788</td>
+        <td>2866</td>
+        <td>2980</td>
+        <td>3070</td>
+        <td>3254</td>
+        <td>3422</td>
+        <td>3657</td>
+        <td>3923</td>
+        <td>4295</td>
+        <td>4603</td>
+        <td>4887</td>
+        <td>5179</td>
+        <td>5538</td>
+        <td>5980</td>
+        <td>6492</td>
+        <td>6955</td>
+        <td>7477</td>
+        <td>8153</td>
+        <td>8979</td>
+        <td>9927</td>
+        <td>11095</td>
+        <td>12364</td>
+        <td>13344</td>
+        <td>14188</td>
+        <td>15739</td>
+        <td>16734</td>
+        <td>17827</td>
+        <td>19031</td>
+        <td>20604</td>
+        <td>21966</td>
+        <td>23315</td>
+        <td>23942</td>
+        <td>25199</td>
+        <td>25589</td>
+        <td>26359</td>
+        <td>27721</td>
+        <td>29266</td>
+        <td>30480</td>
+        <td>32236</td>
+        <td>33890</td>
+        <td>34547</td>
+        <td>35371</td>
+        <td>35332</td>
+        <td>36077</td>
+        <td>38312</td>
+        <td>40592</td>
+        <td>43892</td>
+        <td>47514</td>
+        <td>48692</td>
+        <td>46844</td>
+      </tr>
+      <tr id="LC32" class="js-file-line">
+        <td id="L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td>North Carolina</td>
+        <td>37</td>
+        <td>332</td>
+        <td>292</td>
+        <td>248</td>
+        <td>187</td>
+        <td>208</td>
+        <td>253</td>
+        <td>271</td>
+        <td>297</td>
+        <td>324</td>
+        <td>295</td>
+        <td>315</td>
+        <td>324</td>
+        <td>422</td>
+        <td>572</td>
+        <td>693</td>
+        <td>766</td>
+        <td>823</td>
+        <td>866</td>
+        <td>900</td>
+        <td>1003</td>
+        <td>969</td>
+        <td>1077</td>
+        <td>1192</td>
+        <td>1230</td>
+        <td>1274</td>
+        <td>1293</td>
+        <td>1368</td>
+        <td>1436</td>
+        <td>1424</td>
+        <td>1505</td>
+        <td>1581</td>
+        <td>1629</td>
+        <td>1689</td>
+        <td>1797</td>
+        <td>1877</td>
+        <td>2009</td>
+        <td>2143</td>
+        <td>2363</td>
+        <td>2525</td>
+        <td>2754</td>
+        <td>3051</td>
+        <td>3285</td>
+        <td>3510</td>
+        <td>3899</td>
+        <td>4365</td>
+        <td>4743</td>
+        <td>5039</td>
+        <td>5584</td>
+        <td>6058</td>
+        <td>6780</td>
+        <td>7461</td>
+        <td>8247</td>
+        <td>9184</td>
+        <td>9690</td>
+        <td>10480</td>
+        <td>11788</td>
+        <td>12649</td>
+        <td>13444</td>
+        <td>14325</td>
+        <td>15461</td>
+        <td>16539</td>
+        <td>17367</td>
+        <td>17879</td>
+        <td>19120</td>
+        <td>20042</td>
+        <td>20931</td>
+        <td>21938</td>
+        <td>22940</td>
+        <td>24188</td>
+        <td>25454</td>
+        <td>26003</td>
+        <td>27194</td>
+        <td>27650</td>
+        <td>27726</td>
+        <td>28208</td>
+        <td>29769</td>
+        <td>31209</td>
+        <td>32692</td>
+        <td>33966</td>
+        <td>34340</td>
+        <td>33564</td>
+      </tr>
+      <tr id="LC33" class="js-file-line">
+        <td id="L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td>North Dakota</td>
+        <td>38</td>
+        <td>382</td>
+        <td>311</td>
+        <td>187</td>
+        <td>176</td>
+        <td>146</td>
+        <td>180</td>
+        <td>272</td>
+        <td>234</td>
+        <td>326</td>
+        <td>282</td>
+        <td>319</td>
+        <td>355</td>
+        <td>529</td>
+        <td>665</td>
+        <td>966</td>
+        <td>1031</td>
+        <td>1046</td>
+        <td>1088</td>
+        <td>1494</td>
+        <td>1483</td>
+        <td>1211</td>
+        <td>1360</td>
+        <td>1444</td>
+        <td>1318</td>
+        <td>1336</td>
+        <td>1364</td>
+        <td>1490</td>
+        <td>1556</td>
+        <td>1598</td>
+        <td>1847</td>
+        <td>1679</td>
+        <td>1821</td>
+        <td>1653</td>
+        <td>2320</td>
+        <td>2142</td>
+        <td>2112</td>
+        <td>2463</td>
+        <td>2507</td>
+        <td>2592</td>
+        <td>2719</td>
+        <td>3052</td>
+        <td>3214</td>
+        <td>3669</td>
+        <td>4377</td>
+        <td>6172</td>
+        <td>6120</td>
+        <td>6334</td>
+        <td>6184</td>
+        <td>6427</td>
+        <td>8136</td>
+        <td>8398</td>
+        <td>8095</td>
+        <td>10342</td>
+        <td>10990</td>
+        <td>11386</td>
+        <td>12307</td>
+        <td>12811</td>
+        <td>13126</td>
+        <td>13565</td>
+        <td>12745</td>
+        <td>14357</td>
+        <td>15880</td>
+        <td>16270</td>
+        <td>17692</td>
+        <td>17830</td>
+        <td>19033</td>
+        <td>19084</td>
+        <td>21166</td>
+        <td>20798</td>
+        <td>22767</td>
+        <td>23313</td>
+        <td>25068</td>
+        <td>26118</td>
+        <td>26770</td>
+        <td>29109</td>
+        <td>29676</td>
+        <td>31644</td>
+        <td>32856</td>
+        <td>35882</td>
+        <td>39009</td>
+        <td>38672</td>
+      </tr>
+      <tr id="LC34" class="js-file-line">
+        <td id="L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td>Ohio</td>
+        <td>39</td>
+        <td>771</td>
+        <td>661</td>
+        <td>563</td>
+        <td>400</td>
+        <td>385</td>
+        <td>455</td>
+        <td>516</td>
+        <td>593</td>
+        <td>648</td>
+        <td>561</td>
+        <td>615</td>
+        <td>658</td>
+        <td>821</td>
+        <td>1021</td>
+        <td>1253</td>
+        <td>1312</td>
+        <td>1340</td>
+        <td>1310</td>
+        <td>1401</td>
+        <td>1539</td>
+        <td>1456</td>
+        <td>1608</td>
+        <td>1835</td>
+        <td>1916</td>
+        <td>2024</td>
+        <td>1965</td>
+        <td>2087</td>
+        <td>2182</td>
+        <td>2243</td>
+        <td>2177</td>
+        <td>2314</td>
+        <td>2391</td>
+        <td>2405</td>
+        <td>2515</td>
+        <td>2604</td>
+        <td>2754</td>
+        <td>2948</td>
+        <td>3181</td>
+        <td>3309</td>
+        <td>3616</td>
+        <td>3934</td>
+        <td>4101</td>
+        <td>4328</td>
+        <td>4691</td>
+        <td>5218</td>
+        <td>5733</td>
+        <td>6087</td>
+        <td>6753</td>
+        <td>7511</td>
+        <td>8326</td>
+        <td>9251</td>
+        <td>10103</td>
+        <td>10982</td>
+        <td>11485</td>
+        <td>12167</td>
+        <td>13449</td>
+        <td>14295</td>
+        <td>14933</td>
+        <td>15675</td>
+        <td>16739</td>
+        <td>17825</td>
+        <td>18792</td>
+        <td>19217</td>
+        <td>20242</td>
+        <td>20999</td>
+        <td>22063</td>
+        <td>22887</td>
+        <td>23613</td>
+        <td>24913</td>
+        <td>26164</td>
+        <td>27152</td>
+        <td>28400</td>
+        <td>28966</td>
+        <td>29522</td>
+        <td>30345</td>
+        <td>31240</td>
+        <td>32097</td>
+        <td>33643</td>
+        <td>34814</td>
+        <td>35521</td>
+        <td>35018</td>
+      </tr>
+      <tr id="LC35" class="js-file-line">
+        <td id="L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td>Oklahoma</td>
+        <td>40</td>
+        <td>455</td>
+        <td>368</td>
+        <td>301</td>
+        <td>216</td>
+        <td>222</td>
+        <td>252</td>
+        <td>298</td>
+        <td>321</td>
+        <td>376</td>
+        <td>346</td>
+        <td>349</td>
+        <td>374</td>
+        <td>432</td>
+        <td>626</td>
+        <td>782</td>
+        <td>947</td>
+        <td>970</td>
+        <td>952</td>
+        <td>1028</td>
+        <td>1143</td>
+        <td>1166</td>
+        <td>1144</td>
+        <td>1290</td>
+        <td>1401</td>
+        <td>1475</td>
+        <td>1458</td>
+        <td>1516</td>
+        <td>1593</td>
+        <td>1657</td>
+        <td>1794</td>
+        <td>1857</td>
+        <td>1916</td>
+        <td>1947</td>
+        <td>1994</td>
+        <td>2055</td>
+        <td>2196</td>
+        <td>2361</td>
+        <td>2517</td>
+        <td>2702</td>
+        <td>2948</td>
+        <td>3198</td>
+        <td>3477</td>
+        <td>3711</td>
+        <td>4020</td>
+        <td>4524</td>
+        <td>4986</td>
+        <td>5475</td>
+        <td>5974</td>
+        <td>6586</td>
+        <td>7387</td>
+        <td>8485</td>
+        <td>9580</td>
+        <td>11003</td>
+        <td>11817</td>
+        <td>11725</td>
+        <td>12687</td>
+        <td>13265</td>
+        <td>13288</td>
+        <td>13464</td>
+        <td>14257</td>
+        <td>15265</td>
+        <td>16214</td>
+        <td>16721</td>
+        <td>17526</td>
+        <td>18085</td>
+        <td>18730</td>
+        <td>19394</td>
+        <td>20151</td>
+        <td>21106</td>
+        <td>22199</td>
+        <td>22953</td>
+        <td>23517</td>
+        <td>25059</td>
+        <td>25059</td>
+        <td>25719</td>
+        <td>27516</td>
+        <td>29122</td>
+        <td>31753</td>
+        <td>32781</td>
+        <td>34378</td>
+        <td>33708</td>
+      </tr>
+      <tr id="LC36" class="js-file-line">
+        <td id="L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td>Oregon</td>
+        <td>41</td>
+        <td>668</td>
+        <td>607</td>
+        <td>505</td>
+        <td>379</td>
+        <td>358</td>
+        <td>439</td>
+        <td>458</td>
+        <td>548</td>
+        <td>556</td>
+        <td>531</td>
+        <td>571</td>
+        <td>609</td>
+        <td>818</td>
+        <td>1118</td>
+        <td>1381</td>
+        <td>1389</td>
+        <td>1357</td>
+        <td>1379</td>
+        <td>1504</td>
+        <td>1646</td>
+        <td>1604</td>
+        <td>1657</td>
+        <td>1830</td>
+        <td>1912</td>
+        <td>1916</td>
+        <td>1867</td>
+        <td>1978</td>
+        <td>2070</td>
+        <td>2055</td>
+        <td>2106</td>
+        <td>2244</td>
+        <td>2283</td>
+        <td>2349</td>
+        <td>2457</td>
+        <td>2541</td>
+        <td>2685</td>
+        <td>2852</td>
+        <td>3033</td>
+        <td>3201</td>
+        <td>3448</td>
+        <td>3677</td>
+        <td>3940</td>
+        <td>4212</td>
+        <td>4625</td>
+        <td>5135</td>
+        <td>5726</td>
+        <td>6181</td>
+        <td>6913</td>
+        <td>7556</td>
+        <td>8476</td>
+        <td>9415</td>
+        <td>10196</td>
+        <td>10862</td>
+        <td>11128</td>
+        <td>11832</td>
+        <td>12866</td>
+        <td>13547</td>
+        <td>14162</td>
+        <td>14911</td>
+        <td>16062</td>
+        <td>17222</td>
+        <td>18253</td>
+        <td>18806</td>
+        <td>19558</td>
+        <td>20404</td>
+        <td>21421</td>
+        <td>22668</td>
+        <td>23649</td>
+        <td>24845</td>
+        <td>25958</td>
+        <td>27023</td>
+        <td>28350</td>
+        <td>28866</td>
+        <td>29387</td>
+        <td>30172</td>
+        <td>31217</td>
+        <td>32108</td>
+        <td>34212</td>
+        <td>35279</td>
+        <td>35899</td>
+        <td>35210</td>
+      </tr>
+      <tr id="LC37" class="js-file-line">
+        <td id="L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td>Pennsylvania</td>
+        <td>42</td>
+        <td>772</td>
+        <td>712</td>
+        <td>600</td>
+        <td>449</td>
+        <td>417</td>
+        <td>482</td>
+        <td>517</td>
+        <td>601</td>
+        <td>636</td>
+        <td>563</td>
+        <td>601</td>
+        <td>650</td>
+        <td>776</td>
+        <td>951</td>
+        <td>1146</td>
+        <td>1250</td>
+        <td>1280</td>
+        <td>1289</td>
+        <td>1364</td>
+        <td>1436</td>
+        <td>1405</td>
+        <td>1552</td>
+        <td>1713</td>
+        <td>1789</td>
+        <td>1894</td>
+        <td>1827</td>
+        <td>1915</td>
+        <td>2063</td>
+        <td>2174</td>
+        <td>2164</td>
+        <td>2240</td>
+        <td>2301</td>
+        <td>2334</td>
+        <td>2439</td>
+        <td>2511</td>
+        <td>2662</td>
+        <td>2830</td>
+        <td>3040</td>
+        <td>3246</td>
+        <td>3507</td>
+        <td>3815</td>
+        <td>4077</td>
+        <td>4294</td>
+        <td>4683</td>
+        <td>5168</td>
+        <td>5704</td>
+        <td>6170</td>
+        <td>6800</td>
+        <td>7493</td>
+        <td>8305</td>
+        <td>9225</td>
+        <td>10151</td>
+        <td>11184</td>
+        <td>11887</td>
+        <td>12455</td>
+        <td>13512</td>
+        <td>14445</td>
+        <td>15186</td>
+        <td>16142</td>
+        <td>17323</td>
+        <td>18725</td>
+        <td>19823</td>
+        <td>20505</td>
+        <td>21550</td>
+        <td>22211</td>
+        <td>22864</td>
+        <td>23738</td>
+        <td>24838</td>
+        <td>26092</td>
+        <td>27358</td>
+        <td>28605</td>
+        <td>29539</td>
+        <td>30085</td>
+        <td>30840</td>
+        <td>31709</td>
+        <td>33069</td>
+        <td>34131</td>
+        <td>36375</td>
+        <td>38003</td>
+        <td>39008</td>
+        <td>38827</td>
+      </tr>
+      <tr id="LC38" class="js-file-line">
+        <td id="L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td>Rhode Island</td>
+        <td>44</td>
+        <td>874</td>
+        <td>788</td>
+        <td>711</td>
+        <td>575</td>
+        <td>559</td>
+        <td>600</td>
+        <td>645</td>
+        <td>711</td>
+        <td>731</td>
+        <td>672</td>
+        <td>720</td>
+        <td>750</td>
+        <td>934</td>
+        <td>1149</td>
+        <td>1201</td>
+        <td>1274</td>
+        <td>1278</td>
+        <td>1369</td>
+        <td>1459</td>
+        <td>1433</td>
+        <td>1378</td>
+        <td>1553</td>
+        <td>1717</td>
+        <td>1765</td>
+        <td>1855</td>
+        <td>1847</td>
+        <td>1958</td>
+        <td>1998</td>
+        <td>2024</td>
+        <td>2067</td>
+        <td>2183</td>
+        <td>2234</td>
+        <td>2329</td>
+        <td>2457</td>
+        <td>2552</td>
+        <td>2691</td>
+        <td>2870</td>
+        <td>3113</td>
+        <td>3336</td>
+        <td>3595</td>
+        <td>3865</td>
+        <td>4114</td>
+        <td>4295</td>
+        <td>4625</td>
+        <td>4972</td>
+        <td>5405</td>
+        <td>5844</td>
+        <td>6411</td>
+        <td>7004</td>
+        <td>7693</td>
+        <td>8595</td>
+        <td>9742</td>
+        <td>10815</td>
+        <td>11605</td>
+        <td>12439</td>
+        <td>13717</td>
+        <td>14685</td>
+        <td>15587</td>
+        <td>16651</td>
+        <td>18271</td>
+        <td>19657</td>
+        <td>20194</td>
+        <td>20363</td>
+        <td>21257</td>
+        <td>22137</td>
+        <td>22762</td>
+        <td>24046</td>
+        <td>25123</td>
+        <td>26631</td>
+        <td>28012</td>
+        <td>29377</td>
+        <td>29685</td>
+        <td>31378</td>
+        <td>32374</td>
+        <td>33690</td>
+        <td>35318</td>
+        <td>36461</td>
+        <td>38610</td>
+        <td>40421</td>
+        <td>41542</td>
+        <td>41283</td>
+      </tr>
+      <tr id="LC39" class="js-file-line">
+        <td id="L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td>South Carolina</td>
+        <td>45</td>
+        <td>271</td>
+        <td>243</td>
+        <td>205</td>
+        <td>159</td>
+        <td>175</td>
+        <td>211</td>
+        <td>229</td>
+        <td>258</td>
+        <td>273</td>
+        <td>250</td>
+        <td>276</td>
+        <td>310</td>
+        <td>394</td>
+        <td>545</td>
+        <td>648</td>
+        <td>732</td>
+        <td>753</td>
+        <td>780</td>
+        <td>793</td>
+        <td>911</td>
+        <td>873</td>
+        <td>925</td>
+        <td>1115</td>
+        <td>1196</td>
+        <td>1233</td>
+        <td>1166</td>
+        <td>1229</td>
+        <td>1260</td>
+        <td>1286</td>
+        <td>1316</td>
+        <td>1392</td>
+        <td>1437</td>
+        <td>1498</td>
+        <td>1602</td>
+        <td>1669</td>
+        <td>1787</td>
+        <td>1958</td>
+        <td>2176</td>
+        <td>2340</td>
+        <td>2570</td>
+        <td>2827</td>
+        <td>3064</td>
+        <td>3274</td>
+        <td>3603</td>
+        <td>4029</td>
+        <td>4459</td>
+        <td>4720</td>
+        <td>5257</td>
+        <td>5684</td>
+        <td>6334</td>
+        <td>7044</td>
+        <td>7794</td>
+        <td>8651</td>
+        <td>9071</td>
+        <td>9775</td>
+        <td>10910</td>
+        <td>11666</td>
+        <td>12258</td>
+        <td>13056</td>
+        <td>14045</td>
+        <td>14834</td>
+        <td>16050</td>
+        <td>16409</td>
+        <td>17165</td>
+        <td>17805</td>
+        <td>18686</td>
+        <td>19473</td>
+        <td>20403</td>
+        <td>21385</td>
+        <td>22544</td>
+        <td>23545</td>
+        <td>24321</td>
+        <td>24871</td>
+        <td>25279</td>
+        <td>25875</td>
+        <td>27057</td>
+        <td>28337</td>
+        <td>29990</td>
+        <td>30958</td>
+        <td>31510</td>
+        <td>30835</td>
+      </tr>
+      <tr id="LC40" class="js-file-line">
+        <td id="L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td>South Dakota</td>
+        <td>46</td>
+        <td>426</td>
+        <td>366</td>
+        <td>241</td>
+        <td>189</td>
+        <td>129</td>
+        <td>184</td>
+        <td>309</td>
+        <td>244</td>
+        <td>323</td>
+        <td>320</td>
+        <td>345</td>
+        <td>361</td>
+        <td>475</td>
+        <td>757</td>
+        <td>846</td>
+        <td>979</td>
+        <td>1086</td>
+        <td>1132</td>
+        <td>1270</td>
+        <td>1526</td>
+        <td>1116</td>
+        <td>1283</td>
+        <td>1497</td>
+        <td>1327</td>
+        <td>1436</td>
+        <td>1457</td>
+        <td>1342</td>
+        <td>1419</td>
+        <td>1669</td>
+        <td>1740</td>
+        <td>1564</td>
+        <td>1870</td>
+        <td>1863</td>
+        <td>2092</td>
+        <td>2020</td>
+        <td>2000</td>
+        <td>2278</td>
+        <td>2500</td>
+        <td>2577</td>
+        <td>2773</td>
+        <td>2995</td>
+        <td>3256</td>
+        <td>3538</td>
+        <td>4065</td>
+        <td>5163</td>
+        <td>5178</td>
+        <td>5667</td>
+        <td>5591</td>
+        <td>6351</td>
+        <td>7347</td>
+        <td>8158</td>
+        <td>8142</td>
+        <td>9451</td>
+        <td>9915</td>
+        <td>10195</td>
+        <td>11619</td>
+        <td>11942</td>
+        <td>12486</td>
+        <td>13217</td>
+        <td>13807</td>
+        <td>14767</td>
+        <td>16238</td>
+        <td>16961</td>
+        <td>17966</td>
+        <td>18565</td>
+        <td>19607</td>
+        <td>19848</td>
+        <td>21736</td>
+        <td>22275</td>
+        <td>23797</td>
+        <td>25045</td>
+        <td>26115</td>
+        <td>27531</td>
+        <td>27727</td>
+        <td>30072</td>
+        <td>31765</td>
+        <td>32726</td>
+        <td>33320</td>
+        <td>35998</td>
+        <td>38188</td>
+        <td>36499</td>
+      </tr>
+      <tr id="LC41" class="js-file-line">
+        <td id="L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td>Tennessee</td>
+        <td>47</td>
+        <td>378</td>
+        <td>325</td>
+        <td>277</td>
+        <td>198</td>
+        <td>204</td>
+        <td>245</td>
+        <td>264</td>
+        <td>304</td>
+        <td>334</td>
+        <td>300</td>
+        <td>311</td>
+        <td>340</td>
+        <td>436</td>
+        <td>561</td>
+        <td>728</td>
+        <td>864</td>
+        <td>912</td>
+        <td>872</td>
+        <td>892</td>
+        <td>965</td>
+        <td>951</td>
+        <td>1028</td>
+        <td>1122</td>
+        <td>1178</td>
+        <td>1276</td>
+        <td>1274</td>
+        <td>1327</td>
+        <td>1422</td>
+        <td>1476</td>
+        <td>1512</td>
+        <td>1598</td>
+        <td>1618</td>
+        <td>1690</td>
+        <td>1771</td>
+        <td>1855</td>
+        <td>1965</td>
+        <td>2128</td>
+        <td>2332</td>
+        <td>2473</td>
+        <td>2741</td>
+        <td>2967</td>
+        <td>3189</td>
+        <td>3451</td>
+        <td>3808</td>
+        <td>4298</td>
+        <td>4696</td>
+        <td>5017</td>
+        <td>5574</td>
+        <td>6108</td>
+        <td>6895</td>
+        <td>7618</td>
+        <td>8319</td>
+        <td>9196</td>
+        <td>9695</td>
+        <td>10276</td>
+        <td>11453</td>
+        <td>12247</td>
+        <td>12995</td>
+        <td>13909</td>
+        <td>14910</td>
+        <td>15883</td>
+        <td>16821</td>
+        <td>17503</td>
+        <td>18840</td>
+        <td>19741</td>
+        <td>20696</td>
+        <td>21800</td>
+        <td>22450</td>
+        <td>23324</td>
+        <td>24576</td>
+        <td>25574</td>
+        <td>26239</td>
+        <td>27059</td>
+        <td>27647</td>
+        <td>28501</td>
+        <td>29734</td>
+        <td>30764</td>
+        <td>32314</td>
+        <td>33578</td>
+        <td>34243</td>
+        <td>33512</td>
+      </tr>
+      <tr id="LC42" class="js-file-line">
+        <td id="L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td>Texas</td>
+        <td>48</td>
+        <td>479</td>
+        <td>412</td>
+        <td>348</td>
+        <td>266</td>
+        <td>257</td>
+        <td>294</td>
+        <td>326</td>
+        <td>372</td>
+        <td>418</td>
+        <td>404</td>
+        <td>417</td>
+        <td>438</td>
+        <td>528</td>
+        <td>719</td>
+        <td>944</td>
+        <td>1045</td>
+        <td>1058</td>
+        <td>1047</td>
+        <td>1147</td>
+        <td>1214</td>
+        <td>1300</td>
+        <td>1363</td>
+        <td>1488</td>
+        <td>1564</td>
+        <td>1598</td>
+        <td>1630</td>
+        <td>1697</td>
+        <td>1784</td>
+        <td>1856</td>
+        <td>1871</td>
+        <td>1948</td>
+        <td>1955</td>
+        <td>2021</td>
+        <td>2079</td>
+        <td>2155</td>
+        <td>2284</td>
+        <td>2433</td>
+        <td>2630</td>
+        <td>2840</td>
+        <td>3105</td>
+        <td>3373</td>
+        <td>3646</td>
+        <td>3861</td>
+        <td>4192</td>
+        <td>4683</td>
+        <td>5194</td>
+        <td>5738</td>
+        <td>6362</td>
+        <td>6979</td>
+        <td>7912</td>
+        <td>8929</td>
+        <td>9957</td>
+        <td>11391</td>
+        <td>11961</td>
+        <td>12303</td>
+        <td>13396</td>
+        <td>14196</td>
+        <td>14165</td>
+        <td>14486</td>
+        <td>15324</td>
+        <td>16323</td>
+        <td>17458</td>
+        <td>18150</td>
+        <td>19146</td>
+        <td>19825</td>
+        <td>20590</td>
+        <td>21526</td>
+        <td>22557</td>
+        <td>24242</td>
+        <td>25803</td>
+        <td>26858</td>
+        <td>27871</td>
+        <td>28519</td>
+        <td>28295</td>
+        <td>28929</td>
+        <td>30392</td>
+        <td>32448</td>
+        <td>34489</td>
+        <td>36020</td>
+        <td>36969</td>
+        <td>35674</td>
+      </tr>
+      <tr id="LC43" class="js-file-line">
+        <td id="L43" class="blob-num js-line-number" data-line-number="43"></td>
+        <td>Utah</td>
+        <td>49</td>
+        <td>551</td>
+        <td>498</td>
+        <td>369</td>
+        <td>305</td>
+        <td>298</td>
+        <td>310</td>
+        <td>389</td>
+        <td>463</td>
+        <td>444</td>
+        <td>444</td>
+        <td>458</td>
+        <td>480</td>
+        <td>594</td>
+        <td>880</td>
+        <td>1126</td>
+        <td>1049</td>
+        <td>1121</td>
+        <td>1094</td>
+        <td>1180</td>
+        <td>1257</td>
+        <td>1262</td>
+        <td>1348</td>
+        <td>1544</td>
+        <td>1596</td>
+        <td>1604</td>
+        <td>1573</td>
+        <td>1666</td>
+        <td>1758</td>
+        <td>1862</td>
+        <td>1888</td>
+        <td>1970</td>
+        <td>2035</td>
+        <td>2091</td>
+        <td>2230</td>
+        <td>2281</td>
+        <td>2386</td>
+        <td>2494</td>
+        <td>2605</td>
+        <td>2721</td>
+        <td>2900</td>
+        <td>3103</td>
+        <td>3391</td>
+        <td>3658</td>
+        <td>3979</td>
+        <td>4326</td>
+        <td>4743</td>
+        <td>5150</td>
+        <td>5739</td>
+        <td>6328</td>
+        <td>7041</td>
+        <td>7786</td>
+        <td>8464</td>
+        <td>9290</td>
+        <td>9807</td>
+        <td>10333</td>
+        <td>11233</td>
+        <td>11846</td>
+        <td>12248</td>
+        <td>12638</td>
+        <td>13156</td>
+        <td>13977</td>
+        <td>14996</td>
+        <td>15661</td>
+        <td>16354</td>
+        <td>17031</td>
+        <td>17912</td>
+        <td>18858</td>
+        <td>19955</td>
+        <td>21156</td>
+        <td>22294</td>
+        <td>23288</td>
+        <td>23907</td>
+        <td>24899</td>
+        <td>25010</td>
+        <td>25192</td>
+        <td>26169</td>
+        <td>27905</td>
+        <td>29582</td>
+        <td>31009</td>
+        <td>31253</td>
+        <td>30107</td>
+      </tr>
+      <tr id="LC44" class="js-file-line">
+        <td id="L44" class="blob-num js-line-number" data-line-number="44"></td>
+        <td>Vermont</td>
+        <td>50</td>
+        <td>634</td>
+        <td>576</td>
+        <td>474</td>
+        <td>365</td>
+        <td>338</td>
+        <td>383</td>
+        <td>414</td>
+        <td>471</td>
+        <td>485</td>
+        <td>457</td>
+        <td>491</td>
+        <td>516</td>
+        <td>643</td>
+        <td>775</td>
+        <td>932</td>
+        <td>953</td>
+        <td>1035</td>
+        <td>1090</td>
+        <td>1127</td>
+        <td>1192</td>
+        <td>1125</td>
+        <td>1169</td>
+        <td>1334</td>
+        <td>1380</td>
+        <td>1432</td>
+        <td>1456</td>
+        <td>1524</td>
+        <td>1655</td>
+        <td>1720</td>
+        <td>1732</td>
+        <td>1832</td>
+        <td>1923</td>
+        <td>1994</td>
+        <td>2072</td>
+        <td>2128</td>
+        <td>2266</td>
+        <td>2456</td>
+        <td>2729</td>
+        <td>2885</td>
+        <td>3128</td>
+        <td>3388</td>
+        <td>3634</td>
+        <td>3856</td>
+        <td>4176</td>
+        <td>4548</td>
+        <td>4869</td>
+        <td>5192</td>
+        <td>5753</td>
+        <td>6179</td>
+        <td>7036</td>
+        <td>7853</td>
+        <td>8702</td>
+        <td>9717</td>
+        <td>10287</td>
+        <td>10968</td>
+        <td>12048</td>
+        <td>12994</td>
+        <td>13842</td>
+        <td>14992</td>
+        <td>16197</td>
+        <td>17517</td>
+        <td>18055</td>
+        <td>18218</td>
+        <td>19293</td>
+        <td>19785</td>
+        <td>20553</td>
+        <td>21359</td>
+        <td>22295</td>
+        <td>23362</td>
+        <td>24803</td>
+        <td>25889</td>
+        <td>26901</td>
+        <td>28140</td>
+        <td>28651</td>
+        <td>29609</td>
+        <td>31240</td>
+        <td>31920</td>
+        <td>34394</td>
+        <td>36018</td>
+        <td>36940</td>
+        <td>36752</td>
+      </tr>
+      <tr id="LC45" class="js-file-line">
+        <td id="L45" class="blob-num js-line-number" data-line-number="45"></td>
+        <td>Virginia</td>
+        <td>51</td>
+        <td>434</td>
+        <td>384</td>
+        <td>370</td>
+        <td>284</td>
+        <td>285</td>
+        <td>320</td>
+        <td>350</td>
+        <td>390</td>
+        <td>423</td>
+        <td>390</td>
+        <td>426</td>
+        <td>467</td>
+        <td>582</td>
+        <td>785</td>
+        <td>843</td>
+        <td>900</td>
+        <td>950</td>
+        <td>1002</td>
+        <td>1015</td>
+        <td>1148</td>
+        <td>1132</td>
+        <td>1257</td>
+        <td>1420</td>
+        <td>1510</td>
+        <td>1533</td>
+        <td>1554</td>
+        <td>1637</td>
+        <td>1712</td>
+        <td>1738</td>
+        <td>1784</td>
+        <td>1885</td>
+        <td>1936</td>
+        <td>2005</td>
+        <td>2121</td>
+        <td>2218</td>
+        <td>2403</td>
+        <td>2563</td>
+        <td>2746</td>
+        <td>2967</td>
+        <td>3252</td>
+        <td>3558</td>
+        <td>3795</td>
+        <td>4092</td>
+        <td>4486</td>
+        <td>4972</td>
+        <td>5484</td>
+        <td>5934</td>
+        <td>6534</td>
+        <td>7192</td>
+        <td>8040</td>
+        <td>8995</td>
+        <td>10176</td>
+        <td>11291</td>
+        <td>12075</td>
+        <td>12936</td>
+        <td>14298</td>
+        <td>15286</td>
+        <td>16237</td>
+        <td>17332</td>
+        <td>18556</td>
+        <td>19780</td>
+        <td>20538</td>
+        <td>21092</td>
+        <td>21965</td>
+        <td>22773</td>
+        <td>23709</td>
+        <td>24456</td>
+        <td>25495</td>
+        <td>26768</td>
+        <td>28343</td>
+        <td>29789</td>
+        <td>31162</td>
+        <td>32747</td>
+        <td>33235</td>
+        <td>34451</td>
+        <td>36285</td>
+        <td>38304</td>
+        <td>40644</td>
+        <td>42506</td>
+        <td>43409</td>
+        <td>43211</td>
+      </tr>
+      <tr id="LC46" class="js-file-line">
+        <td id="L46" class="blob-num js-line-number" data-line-number="46"></td>
+        <td>Washington</td>
+        <td>53</td>
+        <td>741</td>
+        <td>658</td>
+        <td>534</td>
+        <td>402</td>
+        <td>376</td>
+        <td>443</td>
+        <td>490</td>
+        <td>569</td>
+        <td>599</td>
+        <td>582</td>
+        <td>614</td>
+        <td>658</td>
+        <td>864</td>
+        <td>1196</td>
+        <td>1469</td>
+        <td>1527</td>
+        <td>1419</td>
+        <td>1401</td>
+        <td>1504</td>
+        <td>1624</td>
+        <td>1595</td>
+        <td>1721</td>
+        <td>1874</td>
+        <td>1973</td>
+        <td>2066</td>
+        <td>2077</td>
+        <td>2116</td>
+        <td>2172</td>
+        <td>2262</td>
+        <td>2281</td>
+        <td>2380</td>
+        <td>2436</td>
+        <td>2535</td>
+        <td>2680</td>
+        <td>2735</td>
+        <td>2858</td>
+        <td>3078</td>
+        <td>3385</td>
+        <td>3566</td>
+        <td>3850</td>
+        <td>4097</td>
+        <td>4205</td>
+        <td>4381</td>
+        <td>4731</td>
+        <td>5312</td>
+        <td>5919</td>
+        <td>6533</td>
+        <td>7181</td>
+        <td>7832</td>
+        <td>8887</td>
+        <td>9965</td>
+        <td>10913</td>
+        <td>11903</td>
+        <td>12431</td>
+        <td>13124</td>
+        <td>14021</td>
+        <td>14738</td>
+        <td>15522</td>
+        <td>16300</td>
+        <td>17270</td>
+        <td>18670</td>
+        <td>20026</td>
+        <td>20901</td>
+        <td>21917</td>
+        <td>22414</td>
+        <td>23119</td>
+        <td>23878</td>
+        <td>25287</td>
+        <td>26817</td>
+        <td>28632</td>
+        <td>30392</td>
+        <td>31528</td>
+        <td>32053</td>
+        <td>32206</td>
+        <td>32934</td>
+        <td>34984</td>
+        <td>35738</td>
+        <td>38477</td>
+        <td>40782</td>
+        <td>41588</td>
+        <td>40619</td>
+      </tr>
+      <tr id="LC47" class="js-file-line">
+        <td id="L47" class="blob-num js-line-number" data-line-number="47"></td>
+        <td>West Virginia</td>
+        <td>54</td>
+        <td>460</td>
+        <td>408</td>
+        <td>356</td>
+        <td>257</td>
+        <td>259</td>
+        <td>313</td>
+        <td>337</td>
+        <td>390</td>
+        <td>418</td>
+        <td>370</td>
+        <td>388</td>
+        <td>407</td>
+        <td>498</td>
+        <td>613</td>
+        <td>739</td>
+        <td>820</td>
+        <td>888</td>
+        <td>925</td>
+        <td>1032</td>
+        <td>1110</td>
+        <td>1023</td>
+        <td>1056</td>
+        <td>1182</td>
+        <td>1247</td>
+        <td>1276</td>
+        <td>1225</td>
+        <td>1318</td>
+        <td>1477</td>
+        <td>1594</td>
+        <td>1551</td>
+        <td>1597</td>
+        <td>1625</td>
+        <td>1671</td>
+        <td>1762</td>
+        <td>1853</td>
+        <td>1974</td>
+        <td>2126</td>
+        <td>2271</td>
+        <td>2417</td>
+        <td>2573</td>
+        <td>2798</td>
+        <td>3117</td>
+        <td>3378</td>
+        <td>3682</td>
+        <td>4026</td>
+        <td>4457</td>
+        <td>4974</td>
+        <td>5479</td>
+        <td>6053</td>
+        <td>6703</td>
+        <td>7432</td>
+        <td>8172</td>
+        <td>8866</td>
+        <td>9439</td>
+        <td>9626</td>
+        <td>10417</td>
+        <td>10936</td>
+        <td>11464</td>
+        <td>11950</td>
+        <td>12708</td>
+        <td>13529</td>
+        <td>14579</td>
+        <td>15219</td>
+        <td>16118</td>
+        <td>16724</td>
+        <td>17413</td>
+        <td>17913</td>
+        <td>18566</td>
+        <td>19388</td>
+        <td>20246</td>
+        <td>20966</td>
+        <td>21915</td>
+        <td>23333</td>
+        <td>24103</td>
+        <td>24626</td>
+        <td>25484</td>
+        <td>26374</td>
+        <td>28379</td>
+        <td>29769</td>
+        <td>31265</td>
+        <td>31843</td>
+      </tr>
+      <tr id="LC48" class="js-file-line">
+        <td id="L48" class="blob-num js-line-number" data-line-number="48"></td>
+        <td>Wisconsin</td>
+        <td>55</td>
+        <td>673</td>
+        <td>588</td>
+        <td>469</td>
+        <td>362</td>
+        <td>333</td>
+        <td>380</td>
+        <td>461</td>
+        <td>518</td>
+        <td>551</td>
+        <td>507</td>
+        <td>513</td>
+        <td>547</td>
+        <td>672</td>
+        <td>866</td>
+        <td>1053</td>
+        <td>1109</td>
+        <td>1182</td>
+        <td>1211</td>
+        <td>1296</td>
+        <td>1434</td>
+        <td>1387</td>
+        <td>1506</td>
+        <td>1736</td>
+        <td>1799</td>
+        <td>1839</td>
+        <td>1774</td>
+        <td>1875</td>
+        <td>1990</td>
+        <td>2060</td>
+        <td>2075</td>
+        <td>2225</td>
+        <td>2258</td>
+        <td>2304</td>
+        <td>2412</td>
+        <td>2458</td>
+        <td>2616</td>
+        <td>2789</td>
+        <td>3025</td>
+        <td>3180</td>
+        <td>3441</td>
+        <td>3751</td>
+        <td>3983</td>
+        <td>4238</td>
+        <td>4595</td>
+        <td>5130</td>
+        <td>5622</td>
+        <td>6061</td>
+        <td>6670</td>
+        <td>7417</td>
+        <td>8292</td>
+        <td>9281</td>
+        <td>10161</td>
+        <td>11006</td>
+        <td>11592</td>
+        <td>12046</td>
+        <td>13182</td>
+        <td>13845</td>
+        <td>14530</td>
+        <td>15358</td>
+        <td>16201</td>
+        <td>17299</td>
+        <td>18160</td>
+        <td>18711</td>
+        <td>19872</td>
+        <td>20639</td>
+        <td>21699</td>
+        <td>22573</td>
+        <td>23554</td>
+        <td>24790</td>
+        <td>26245</td>
+        <td>27390</td>
+        <td>28232</td>
+        <td>29161</td>
+        <td>29838</td>
+        <td>30657</td>
+        <td>31703</td>
+        <td>32625</td>
+        <td>34535</td>
+        <td>35839</td>
+        <td>36594</td>
+        <td>35676</td>
+      </tr>
+      <tr id="LC49" class="js-file-line">
+        <td id="L49" class="blob-num js-line-number" data-line-number="49"></td>
+        <td>Wyoming</td>
+        <td>56</td>
+        <td>675</td>
+        <td>585</td>
+        <td>476</td>
+        <td>374</td>
+        <td>371</td>
+        <td>411</td>
+        <td>496</td>
+        <td>551</td>
+        <td>607</td>
+        <td>561</td>
+        <td>587</td>
+        <td>602</td>
+        <td>779</td>
+        <td>944</td>
+        <td>1150</td>
+        <td>1224</td>
+        <td>1258</td>
+        <td>1362</td>
+        <td>1506</td>
+        <td>1610</td>
+        <td>1647</td>
+        <td>1719</td>
+        <td>1955</td>
+        <td>1912</td>
+        <td>1932</td>
+        <td>1858</td>
+        <td>1913</td>
+        <td>2011</td>
+        <td>2132</td>
+        <td>2172</td>
+        <td>2278</td>
+        <td>2312</td>
+        <td>2387</td>
+        <td>2502</td>
+        <td>2535</td>
+        <td>2588</td>
+        <td>2743</td>
+        <td>2906</td>
+        <td>3121</td>
+        <td>3315</td>
+        <td>3584</td>
+        <td>3919</td>
+        <td>4269</td>
+        <td>4709</td>
+        <td>5410</td>
+        <td>6172</td>
+        <td>6701</td>
+        <td>7212</td>
+        <td>8152</td>
+        <td>9384</td>
+        <td>10572</td>
+        <td>11753</td>
+        <td>12879</td>
+        <td>13251</td>
+        <td>12723</td>
+        <td>13493</td>
+        <td>14242</td>
+        <td>14004</td>
+        <td>14194</td>
+        <td>14968</td>
+        <td>16383</td>
+        <td>17996</td>
+        <td>18867</td>
+        <td>19550</td>
+        <td>20287</td>
+        <td>20957</td>
+        <td>21514</td>
+        <td>22098</td>
+        <td>23820</td>
+        <td>24927</td>
+        <td>26396</td>
+        <td>27230</td>
+        <td>29122</td>
+        <td>29828</td>
+        <td>31544</td>
+        <td>33721</td>
+        <td>36683</td>
+        <td>41548</td>
+        <td>43453</td>
+        <td>45177</td>
+        <td>42504</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  </div>
+
+</div>
+
+<button type="button" data-facebox="#jump-to-line" data-facebox-class="linejump" data-hotkey="l" class="d-none">Jump to Line</button>
+<div id="jump-to-line" style="display:none">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input class="form-control linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+    <button type="submit" class="btn">Go</button>
+</form></div>
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+
+
+
+    </div>
+  </div>
+
+  </div>
+
+      <div class="container site-footer-container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links float-right">
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact GitHub</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage" class="site-footer-mark" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2017 <span title="0.14564s from github-fe139-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+  
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+    You can't perform that action at this time.
+  </div>
+
+
+    
+    <script crossorigin="anonymous" integrity="sha256-mKyYfkITlE5yviGppBK+X9ltK5Ugg7hQ6P0kjwXZeWo=" src="https://assets-cdn.github.com/assets/frameworks-98ac987e4213944e72be21a9a412be5fd96d2b952083b850e8fd248f05d9796a.js"></script>
+    <script async="async" crossorigin="anonymous" integrity="sha256-9kY+CDlC4neoUnxG/GBhBOgxE+wgN+m8RQN9rgibMCA=" src="https://assets-cdn.github.com/assets/github-f6463e083942e277a8527c46fc606104e83113ec2037e9bc45037dae089b3020.js"></script>
+    
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+  </div>
+</div>
+
+
+  </body>
+</html>
+
